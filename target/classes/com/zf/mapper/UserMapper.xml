@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace:命名空间，相当于包名
+    #{}：相当于占位符
+-->
+<mapper namespace="com.zf.mapper.UserMapper">
+
+    <!--
+        id：语句唯一标识
+        parameterType：传参类型
+        resultType：返回类型
+    -->
+    <select id="findUser" parameterType="com.zf.pojo.User" resultType="com.zf.pojo.User">
+        select * from
+        user where
+        username = #{username} and password = #{password}
+    </select>
+
+        <insert id="insertOpenid" parameterType="String" statementType = "PREPARED" keyProperty = "id" useGeneratedKeys = "true">
+        insert into `user` (openid) values (#{openid})
+    </insert>
+
+    <update id="updateOpenid" parameterType="com.zf.pojo.User">
+        update `user` set openid=#{openid} where username=#{username} and password=#{password}
+    </update>
+
+
+</mapper>
