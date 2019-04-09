@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zf.mapper.ArticleMapper">
+
+    <!--获取简略信息-->
+    <select id="getSimpleMessage" resultType="com.zf.pojo.Article">
+        select id,title,time,imagepath from `article`
+    </select>
+
+    <!--获取详细信息-->
+    <select id="getMessage" parameterType="int" resultType="com.zf.pojo.Article">
+        select * from `article` where id=#{id}
+    </select>
+
+    <!--添加文章-->
+    <insert id="insertArticle" parameterType="com.zf.pojo.Article">
+        insert into `article` (`title`,`text`,`time`,`imagepath`) values (#{title},#{text},#{time},#{imagepath})
+    </insert>
+
+    <!--删除文章-->
+    <delete id="deleteArticle" parameterType="int">
+        delete from `article` where id=#{id}
+    </delete>
+
+    <!--更新文章-->
+    <update id="updateArticle" parameterType="com.zf.pojo.Article">
+        update `article` set
+        <if test="Article.title != null">
+            title=#{title},
+        </if>
+        <if test="Article.text != null">
+            text=#{text},
+        </if>
+        <if test="Article.imagepath != null">
+            imagepath=#{imagepath},
+        </if>
+        time=#{time} where id=#{id}
+    </update>
+
+</mapper>

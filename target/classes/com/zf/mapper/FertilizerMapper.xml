@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zf.mapper.FertilizerMapper">
+    
+    <select id="getAll" resultType="com.zf.pojo.Fertilizer">
+        select * from `fertilizer`
+    </select>
+
+    <select id="get" parameterType="int" resultType="com.zf.pojo.Fertilizer">
+        select * from `fertilizer` where id=#{id}
+    </select>
+
+    <insert id="insert" parameterType="com.zf.pojo.Fertilizer">
+        insert into `fertilizer` (`name`) values (#{name})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from `fertilizer` where id=#{id}
+    </delete>
+
+    <update id="update" parameterType="com.zf.pojo.Fertilizer">
+        update `fertilizer` set
+            name=#{name}
+        where id=#{id}
+    </update>
+
+</mapper>

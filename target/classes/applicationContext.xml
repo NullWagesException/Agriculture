@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+    <!--加载数据库配置文件-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+    <!--配置druid连接池相关信息-->
+    <bean id="druid" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--配置sqlSessionFactory交由spring管理-->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
+
+        <!--配置连接池-->
+        <property name="dataSource" ref="druid"/>
+        <!--加载连接文件-->
+
+        <property name="configLocation" value="classpath:SqlMapConfig.xml"/>
+        <!--配置包扫描-->
+        <property name="typeAliasesPackage" value="com.zf.pojo"/>
+        <!--加载mapper映射文件-->
+        <property name="mapperLocations" value="classpath:com/zf/mapper/*.xml"/>
+    </bean>
+
+
+    <bean id="UserService" class="com.zf.service.impl.UserService">
+        <property name="userMapper" ref="userMapper"/>
+    </bean>
+
+    <bean id="ImageService" class="com.zf.service.impl.ImagesService">
+        <property name="imagesMapper" ref="imagesMapper"/>
+    </bean>
+
+    <bean id="ArticleService" class="com.zf.service.impl.ArticleService">
+        <property name="articleMapper" ref="articleMapper"/>
+    </bean>
+
+    <bean id="SeedingService" class="com.zf.service.impl.SeedingService">
+        <property name="seedingMapper" ref="seedingMapper"/>
+    </bean>
+
+    <bean id="Fertilizer" class="com.zf.service.impl.FertilizerService">
+        <property name="fertilizerMapper" ref="fertilizerMapper"/>
+    </bean>
+
+    <bean id="Pesticides" class="com.zf.service.impl.PesticidesService">
+        <property name="pesticidesMapper" ref="pesticidesMapper"/>
+    </bean>
+
+    <bean id="CuringService" class="com.zf.service.impl.CuringService">
+        <property name="curingMapper" ref="curingMapper"/>
+    </bean>
+
+    <!--配置动态DAO并交由spring控制-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <property name="basePackage" value="com.zf.mapper"/>
+    </bean>
+
+</beans>

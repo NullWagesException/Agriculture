@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zf.mapper.CuringMapper">
+
+    <select id="getAll" resultType="com.zf.pojo.CuringMapper">
+        select * from `curing`
+    </select>
+
+    <select id="get" parameterType="int" resultType="com.zf.pojo.CuringMapper">
+        select * from `curing` where id=#{id}
+    </select>
+
+    <insert id="insert" parameterType="com.zf.pojo.CuringMapper">
+        insert into `curing` (`imagepath`,`status`,`expected`,`actual`,`fertilizer_num`,`pesticides_num`,`seedling_num`,`schedule`,`date`,`remarks`)
+         values
+                (#{imagepath},#{status},#{expected},#{actual},#{fertilizer_num},#{pesticides_num},#{seedling_num},#{schedule},#{date},#{remarks},)
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from `curing` where id=#{id}
+    </delete>
+
+    <update id="update" parameterType="com.zf.pojo.CuringMapper">
+        update `curing` set
+            imagepath=#{imagepath},
+            status=#{status},
+            expected=#{expected},
+            actual=#{actual},
+            fertilizer_num=#{fertilizer_num},
+            pesticides_num=#{pesticides_num},
+            seedling_num=#{seedling_num},
+            schedule=#{schedule},
+            date=#{date},
+            remarks=#{remarks},
+        where id=#{id}
+    </update>
+
+</mapper>
