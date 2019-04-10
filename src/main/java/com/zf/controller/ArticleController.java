@@ -42,11 +42,7 @@ public class ArticleController extends BaseC {
 //   添加文章
     @RequestMapping("insert")
     @ResponseBody
-    public void insertArticle(HttpServletResponse response,String title,String text,String imagepath){
-        Article article = new Article();
-        article.setImagepath(imagepath);
-        article.setText(text);
-        article.setTitle(title);
+    public void insertArticle(HttpServletResponse response,Article article){
         article.setTime(new Date());
         try{
             articleService.insertArticle(article);
@@ -71,15 +67,15 @@ public class ArticleController extends BaseC {
 //    更新文章
     @RequestMapping("update")
     @ResponseBody
-    public void updateArticle(HttpServletResponse response,Integer id,String title,String text,String imagepath){
-        Article article = articleService.getMessage(id);
-        if (title != null)
-            article.setTitle(title);
-        if (imagepath != null)
-            article.setImagepath(imagepath);
-        if (text != null)
-            article.setText(text);
-        article.setTime(new Date());
+    public void updateArticle(HttpServletResponse response,Article article){
+        Article article_r = articleService.getMessage(article.getId());
+        if (article.getTitle() != null)
+            article_r.setTitle(article.getTitle());
+        if (article.getImagepath() != null)
+            article_r.setImagepath(article.getImagepath());
+        if (article.getText() != null)
+            article_r.setText(article.getText());
+        article_r.setTime(new Date());
         try{
             articleService.updateArticle(article);
             ajaxReturn(true,"更新成功",response);
