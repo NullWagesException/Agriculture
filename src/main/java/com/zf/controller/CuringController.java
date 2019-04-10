@@ -40,8 +40,26 @@ public class CuringController extends BaseC{
 
     @RequestMapping("insert")
     @ResponseBody
+<<<<<<< HEAD
     public void insertArticle(HttpServletResponse response, Curing curing){
         curing.setDate(new Date());
+=======
+    public void insertArticle(HttpServletResponse response, String imagepath, String status,
+                              String expected, String actual, String fertilizer_num,
+                              String pesticides_num, String seedling_num, String schedule,
+                              String remarks){
+        Curing curing = new Curing();
+        curing.setImagepath(imagepath);
+        curing.setStatus(status);
+        curing.setExpected(expected);
+        curing.setActual(actual);
+        curing.setFertilizer_num(fertilizer_num);
+        curing.setPesticides_num(pesticides_num);
+        curing.setSeedling_num(seedling_num);
+        curing.setSchedule(schedule);
+        curing.setDate(new Date());
+        curing.setRemarks(remarks);
+>>>>>>> 80f598f33b03bb36ae0c952d5930b8bda4376e2f
         try{
             curingService.insert(curing);
             ajaxReturn(true,"添加成功",response);
@@ -63,6 +81,7 @@ public class CuringController extends BaseC{
 
     @RequestMapping("update")
     @ResponseBody
+<<<<<<< HEAD
     public void updateArticle(HttpServletResponse response,Curing curing){
         Curing curing_r = curingService.get(curing.getId());
         if (curing.getImagepath() != null)
@@ -83,6 +102,31 @@ public class CuringController extends BaseC{
             curing_r.setSchedule(curing.getSchedule());
         if (curing.getRemarks() != null)
             curing_r.setRemarks(curing.getRemarks());
+=======
+    public void updateArticle(HttpServletResponse response, Integer id, String imagepath, String status,
+                              String expected, String actual, String fertilizer_num,
+                              String pesticides_num, String seedling_num, String schedule,
+                              String remarks){
+        Curing curing = curingService.get(id);
+        if (imagepath != null)
+            curing.setImagepath(imagepath);
+        if (status != null)
+            curing.setStatus(status);
+        if (expected != null)
+            curing.setExpected(expected);
+        if (actual != null)
+            curing.setActual(actual);
+        if (fertilizer_num != null)
+            curing.setFertilizer_num(fertilizer_num);
+        if (pesticides_num != null)
+            curing.setPesticides_num(pesticides_num);
+        if (seedling_num != null)
+            curing.setSeedling_num(seedling_num);
+        if (schedule != null)
+            curing.setSchedule(schedule);
+        if (remarks != null)
+            curing.setRemarks(remarks);
+>>>>>>> 80f598f33b03bb36ae0c952d5930b8bda4376e2f
         curing.setDate(new Date());
         try{
             curingService.update(curing);

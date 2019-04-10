@@ -21,6 +21,7 @@
 
   <dependencies>
 
+<<<<<<< HEAD
     <!--解决JSON含反斜杠时-->
     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
     <dependency>
@@ -29,6 +30,8 @@
       <version>3.0</version>
     </dependency>
 
+=======
+>>>>>>> 80f598f33b03bb36ae0c952d5930b8bda4376e2f
     <dependency>
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis-spring</artifactId>

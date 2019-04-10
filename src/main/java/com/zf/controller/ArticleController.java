@@ -42,7 +42,15 @@ public class ArticleController extends BaseC {
 //   添加文章
     @RequestMapping("insert")
     @ResponseBody
+<<<<<<< HEAD
     public void insertArticle(HttpServletResponse response,Article article){
+=======
+    public void insertArticle(HttpServletResponse response,String title,String text,String imagepath){
+        Article article = new Article();
+        article.setImagepath(imagepath);
+        article.setText(text);
+        article.setTitle(title);
+>>>>>>> 80f598f33b03bb36ae0c952d5930b8bda4376e2f
         article.setTime(new Date());
         try{
             articleService.insertArticle(article);
@@ -67,6 +75,7 @@ public class ArticleController extends BaseC {
 //    更新文章
     @RequestMapping("update")
     @ResponseBody
+<<<<<<< HEAD
     public void updateArticle(HttpServletResponse response,Article article){
         Article article_r = articleService.getMessage(article.getId());
         if (article.getTitle() != null)
@@ -76,6 +85,17 @@ public class ArticleController extends BaseC {
         if (article.getText() != null)
             article_r.setText(article.getText());
         article_r.setTime(new Date());
+=======
+    public void updateArticle(HttpServletResponse response,Integer id,String title,String text,String imagepath){
+        Article article = articleService.getMessage(id);
+        if (title != null)
+            article.setTitle(title);
+        if (imagepath != null)
+            article.setImagepath(imagepath);
+        if (text != null)
+            article.setText(text);
+        article.setTime(new Date());
+>>>>>>> 80f598f33b03bb36ae0c952d5930b8bda4376e2f
         try{
             articleService.updateArticle(article);
             ajaxReturn(true,"更新成功",response);
