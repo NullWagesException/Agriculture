@@ -3,7 +3,6 @@ package com.zf.service.impl;
 import com.zf.mapper.ArticleMapper;
 import com.zf.pojo.Article;
 import com.zf.service.IArticleService;
-import lombok.Setter;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -11,8 +10,11 @@ import java.util.List;
 @Transactional
 public class ArticleService implements IArticleService {
 
-    @Setter
     private ArticleMapper articleMapper;
+
+    public void setArticleMapper(ArticleMapper articleMapper) {
+        this.articleMapper = articleMapper;
+    }
 
     @Override
     public List<Article> getSimpleMessage() {

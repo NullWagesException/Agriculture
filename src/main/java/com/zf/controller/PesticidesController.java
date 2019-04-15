@@ -3,7 +3,6 @@ package com.zf.controller;
 import com.alibaba.fastjson.JSON;
 import com.zf.pojo.Pesticides;
 import com.zf.service.IPesticidesService;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +16,12 @@ import java.util.List;
 public class PesticidesController extends BaseC{
 
 
-    @Setter
     @Autowired
     private IPesticidesService pesticidesService;
+
+    public void setPesticidesService(IPesticidesService pesticidesService) {
+        this.pesticidesService = pesticidesService;
+    }
 
     @RequestMapping("getAll")
     @ResponseBody

@@ -45,6 +45,25 @@
         <property name="articleMapper" ref="articleMapper"/>
     </bean>
 
+    <bean id="SeedingService" class="com.zf.service.impl.SeedingService">
+        <property name="seedingMapper" ref="seedingMapper"/>
+    </bean>
+
+    <bean id="Fertilizer" class="com.zf.service.impl.FertilizerService">
+        <property name="fertilizerMapper" ref="fertilizerMapper"/>
+    </bean>
+
+    <bean id="Pesticides" class="com.zf.service.impl.PesticidesService">
+        <property name="pesticidesMapper" ref="pesticidesMapper"/>
+    </bean>
+
+    <bean id="CuringService" class="com.zf.service.impl.CuringService">
+        <property name="curingMapper" ref="curingMapper"/>
+    </bean>
+
+    <bean id="PlantService" class="com.zf.service.impl.PlantService">
+        <property name="plantMapper" ref="plantMapper"/>
+    </bean>
 
     <!--配置动态DAO并交由spring控制-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">

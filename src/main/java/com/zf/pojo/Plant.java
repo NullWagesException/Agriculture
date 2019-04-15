@@ -1,11 +1,6 @@
 package com.zf.pojo;
 
-import lombok.Getter;
-import lombok.Setter;
-
 //植物信息
-@Setter
-@Getter
 public class Plant {
 
     private Integer id;
@@ -13,4 +8,35 @@ public class Plant {
     private String longitude;
     private String latitude;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
 }

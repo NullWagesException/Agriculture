@@ -1,10 +1,5 @@
 package com.zf.pojo;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 //图片
 public class Images {
 
@@ -17,5 +12,21 @@ public class Images {
                 "id=" + id +
                 ", imagepath='" + imagepath + '\'' +
                 '}';
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getImagepath() {
+        return imagepath;
+    }
+
+    public void setImagepath(String imagepath) {
+        this.imagepath = imagepath;
     }
 }

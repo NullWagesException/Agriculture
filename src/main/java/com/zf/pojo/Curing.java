@@ -1,12 +1,7 @@
 package com.zf.pojo;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.Date;
 
-@Getter
-@Setter
 public class Curing {
 
     private Integer id;
@@ -21,4 +16,91 @@ public class Curing {
     private Date date;
     private String remarks;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getImagepath() {
+        return imagepath;
+    }
+
+    public void setImagepath(String imagepath) {
+        this.imagepath = imagepath;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getExpected() {
+        return expected;
+    }
+
+    public void setExpected(String expected) {
+        this.expected = expected;
+    }
+
+    public String getActual() {
+        return actual;
+    }
+
+    public void setActual(String actual) {
+        this.actual = actual;
+    }
+
+    public String getFertilizer_num() {
+        return fertilizer_num;
+    }
+
+    public void setFertilizer_num(String fertilizer_num) {
+        this.fertilizer_num = fertilizer_num;
+    }
+
+    public String getPesticides_num() {
+        return pesticides_num;
+    }
+
+    public void setPesticides_num(String pesticides_num) {
+        this.pesticides_num = pesticides_num;
+    }
+
+    public String getSeedling_num() {
+        return seedling_num;
+    }
+
+    public void setSeedling_num(String seedling_num) {
+        this.seedling_num = seedling_num;
+    }
+
+    public String getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(String schedule) {
+        this.schedule = schedule;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
+    }
 }

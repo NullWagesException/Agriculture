@@ -1,12 +1,7 @@
 package com.zf.pojo;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.Date;
 
-@Getter
-@Setter
 //文章
 public class Article {
 
@@ -15,6 +10,46 @@ public class Article {
     private String text;
     private Date time;
     private String imagepath;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public Date getTime() {
+        return time;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
+    }
+
+    public String getImagepath() {
+        return imagepath;
+    }
+
+    public void setImagepath(String imagepath) {
+        this.imagepath = imagepath;
+    }
 
     @Override
     public String toString() {

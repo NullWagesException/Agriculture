@@ -28,15 +28,9 @@
     <!--更新文章-->
     <update id="updateArticle" parameterType="com.zf.pojo.Article">
         update `article` set
-        <if test="Article.title != null">
             title=#{title},
-        </if>
-        <if test="Article.text != null">
             text=#{text},
-        </if>
-        <if test="Article.imagepath != null">
             imagepath=#{imagepath},
-        </if>
         time=#{time} where id=#{id}
     </update>
 

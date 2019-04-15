@@ -3,14 +3,16 @@ package com.zf.service.impl;
 import com.zf.mapper.SeedingMapper;
 import com.zf.pojo.Seeding;
 import com.zf.service.ISeedingService;
-import lombok.Setter;
 
 import java.util.List;
 
 public class SeedingService implements ISeedingService {
 
-    @Setter
     private SeedingMapper seedingMapper;
+
+    public void setSeedingMapper(SeedingMapper seedingMapper) {
+        this.seedingMapper = seedingMapper;
+    }
 
     @Override
     public List<Seeding> getAll() {

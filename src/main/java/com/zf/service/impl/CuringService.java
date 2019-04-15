@@ -3,14 +3,16 @@ package com.zf.service.impl;
 import com.zf.mapper.CuringMapper;
 import com.zf.pojo.Curing;
 import com.zf.service.ICuringService;
-import lombok.Setter;
 
 import java.util.List;
 
 public class CuringService implements ICuringService {
 
-    @Setter
     private CuringMapper curingMapper;
+
+    public void setCuringMapper(CuringMapper curingMapper) {
+        this.curingMapper = curingMapper;
+    }
 
     @Override
     public List<Curing> getAll() {

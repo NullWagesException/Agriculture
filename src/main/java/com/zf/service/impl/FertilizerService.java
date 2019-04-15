@@ -3,15 +3,17 @@ package com.zf.service.impl;
 import com.zf.mapper.FertilizerMapper;
 import com.zf.pojo.Fertilizer;
 import com.zf.service.IFertilizerService;
-import lombok.Setter;
 
 import java.util.List;
 
 public class FertilizerService implements IFertilizerService {
     
-    @Setter
     private FertilizerMapper fertilizerMapper;
-    
+
+    public void setFertilizerMapper(FertilizerMapper fertilizerMapper) {
+        this.fertilizerMapper = fertilizerMapper;
+    }
+
     @Override
     public List<Fertilizer> getAll() {
         return fertilizerMapper.getAll();

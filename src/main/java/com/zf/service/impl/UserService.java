@@ -3,15 +3,15 @@ package com.zf.service.impl;
 import com.zf.mapper.UserMapper;
 import com.zf.pojo.User;
 import com.zf.service.IUserService;
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
 public class UserService implements IUserService {
-    @Setter
-    @Getter
     private UserMapper userMapper;
+
+    public void setUserMapper(UserMapper userMapper) {
+        this.userMapper = userMapper;
+    }
 
     @Override
     public User findUser(User user) {

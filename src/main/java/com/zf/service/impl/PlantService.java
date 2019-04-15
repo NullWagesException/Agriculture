@@ -3,14 +3,16 @@ package com.zf.service.impl;
 import com.zf.mapper.PlantMapper;
 import com.zf.pojo.Plant;
 import com.zf.service.IPlantService;
-import lombok.Setter;
 
 import java.util.List;
 
 public class PlantService implements IPlantService {
 
-    @Setter
     private PlantMapper plantMapper;
+
+    public void setPlantMapper(PlantMapper plantMapper) {
+        this.plantMapper = plantMapper;
+    }
 
     @Override
     public List<Plant> getAll() {

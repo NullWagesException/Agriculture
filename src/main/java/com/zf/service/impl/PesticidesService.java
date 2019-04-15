@@ -3,15 +3,17 @@ package com.zf.service.impl;
 import com.zf.mapper.PesticidesMapper;
 import com.zf.pojo.Pesticides;
 import com.zf.service.IPesticidesService;
-import lombok.Setter;
 
 import java.util.List;
 
 public class PesticidesService implements IPesticidesService {
     
-    @Setter
     private PesticidesMapper pesticidesMapper;
-    
+
+    public void setPesticidesMapper(PesticidesMapper pesticidesMapper) {
+        this.pesticidesMapper = pesticidesMapper;
+    }
+
     @Override
     public List<Pesticides> getAll() {
         return pesticidesMapper.getAll();

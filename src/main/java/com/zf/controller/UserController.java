@@ -3,8 +3,6 @@ package com.zf.controller;
 import com.zf.myutils.HttpUtils;
 import com.zf.pojo.User;
 import com.zf.service.IUserService;
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,10 +16,12 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class UserController extends BaseC{
 
-    @Setter
-    @Getter
     @Autowired
     private IUserService userService;
+
+    public void setUserService(IUserService userService) {
+        this.userService = userService;
+    }
 
     private String code;
     private User user = new User();

@@ -61,13 +61,10 @@
         <property name="curingMapper" ref="curingMapper"/>
     </bean>
 
-<<<<<<< HEAD
     <bean id="PlantService" class="com.zf.service.impl.PlantService">
         <property name="plantMapper" ref="plantMapper"/>
     </bean>
 
-=======
->>>>>>> 80f598f33b03bb36ae0c952d5930b8bda4376e2f
     <!--配置动态DAO并交由spring控制-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
