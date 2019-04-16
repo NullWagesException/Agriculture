@@ -26,6 +26,7 @@ public class SeedingController extends BaseC{
     }
 
     @RequestMapping("getAll")
+    @Scope("prototype")
     @ResponseBody
     public void get(HttpServletResponse response){
         List<Seeding> all = seedingService.getAll();
@@ -34,6 +35,7 @@ public class SeedingController extends BaseC{
     }
 
     @RequestMapping("get")
+    @Scope("prototype")
     @ResponseBody
     public void getMessage(HttpServletResponse response,Integer id){
         Seeding seeding = seedingService.get(id);
@@ -42,6 +44,7 @@ public class SeedingController extends BaseC{
     }
 
     @RequestMapping("insert")
+    @Scope("prototype")
     @ResponseBody
     public void insertArticle(HttpServletResponse response,String name){
         Seeding seeding = new Seeding();
@@ -55,6 +58,7 @@ public class SeedingController extends BaseC{
     }
 
     @RequestMapping("delete")
+    @Scope("prototype")
     @ResponseBody
     public void deleteArticle(HttpServletResponse response,Integer id){
         try{
@@ -66,6 +70,7 @@ public class SeedingController extends BaseC{
     }
 
     @RequestMapping("update")
+    @Scope("prototype")
     @ResponseBody
     public void updateArticle(HttpServletResponse response, Integer id, String name){
         Seeding seeding = seedingService.get(id);

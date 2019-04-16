@@ -25,6 +25,7 @@ public class ImagesController extends BaseC{
     }
 
     @RequestMapping("getAllImages")
+    @Scope("prototype")
     @ResponseBody
     public void getAllImages(HttpServletResponse response){
 

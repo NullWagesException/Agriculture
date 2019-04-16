@@ -29,6 +29,7 @@ public class UserController extends BaseC{
     private User user = new User();
 
     @RequestMapping("findUserById")
+    @Scope("prototype")
     @ResponseBody
     //对用户未进行登陆时，验证用户名密码以及返回登录态
     public ModelAndView findUserById(@PathVariable("code") String code,String username,String password){
@@ -43,6 +44,7 @@ public class UserController extends BaseC{
     }
 
     @RequestMapping("getKeyAndID")
+    @Scope("prototype")
     @ResponseBody
     public void getKeyAndID(HttpServletResponse response){
         String targetData = HttpUtils.getTargetData("https://api.weixin.qq.com/sns/jscode2session?appid=wx1a4fb0ccc09a8183&secret=e9b15594b074af72d5e03337b77fddd9&js_code=" + code + "&grant_type=authorization_code");

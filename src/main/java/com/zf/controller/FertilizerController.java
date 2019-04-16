@@ -26,6 +26,7 @@ public class FertilizerController extends BaseC{
     }
 
     @RequestMapping("getAll")
+    @Scope("prototype")
     @ResponseBody
     public void get(HttpServletResponse response){
         List<Fertilizer> all = fertilizerService.getAll();
@@ -34,6 +35,7 @@ public class FertilizerController extends BaseC{
     }
 
     @RequestMapping("get")
+    @Scope("prototype")
     @ResponseBody
     public void getMessage(HttpServletResponse response,Integer id){
         Fertilizer Fertilizer = fertilizerService.get(id);
@@ -42,6 +44,7 @@ public class FertilizerController extends BaseC{
     }
 
     @RequestMapping("insert")
+    @Scope("prototype")
     @ResponseBody
     public void insertArticle(HttpServletResponse response,String name){
         Fertilizer Fertilizer = new Fertilizer();
@@ -55,6 +58,7 @@ public class FertilizerController extends BaseC{
     }
 
     @RequestMapping("delete")
+    @Scope("prototype")
     @ResponseBody
     public void deleteArticle(HttpServletResponse response,Integer id){
         try{
@@ -66,6 +70,7 @@ public class FertilizerController extends BaseC{
     }
 
     @RequestMapping("update")
+    @Scope("prototype")
     @ResponseBody
     public void updateArticle(HttpServletResponse response, Integer id, String name){
         Fertilizer Fertilizer = fertilizerService.get(id);

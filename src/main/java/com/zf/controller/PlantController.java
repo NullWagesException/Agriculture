@@ -26,6 +26,7 @@ public class PlantController extends BaseC{
     }
 
     @RequestMapping("getAll")
+    @Scope("prototype")
     @ResponseBody
     public void get(HttpServletResponse response){
         List<Plant> all = plantService.getAll();
@@ -34,6 +35,7 @@ public class PlantController extends BaseC{
     }
 
     @RequestMapping("get")
+    @Scope("prototype")
     @ResponseBody
     public void getMessage(HttpServletResponse response,Integer id){
         Plant plant = plantService.get(id);
@@ -42,6 +44,7 @@ public class PlantController extends BaseC{
     }
 
     @RequestMapping("insert")
+    @Scope("prototype")
     @ResponseBody
     public void insertArticle(HttpServletResponse response,String name,String longitude,String latitude){
         Plant plant = new Plant();
@@ -57,6 +60,7 @@ public class PlantController extends BaseC{
     }
 
     @RequestMapping("delete")
+    @Scope("prototype")
     @ResponseBody
     public void deleteArticle(HttpServletResponse response,Integer id){
         try{
@@ -68,6 +72,7 @@ public class PlantController extends BaseC{
     }
 
     @RequestMapping("update")
+    @Scope("prototype")
     @ResponseBody
     public void updateArticle(HttpServletResponse response, Integer id, String name,String longitude,String latitude){
         Plant plant = plantService.get(id);

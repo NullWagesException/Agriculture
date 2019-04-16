@@ -27,6 +27,7 @@ public class ArticleController extends BaseC {
 
     //获取简略信息
     @RequestMapping("getAll")
+    @Scope("prototype")
     @ResponseBody
     public void getSimpleMessage(HttpServletResponse response){
         List<Article> simpleMessage = articleService.getSimpleMessage();
@@ -36,6 +37,7 @@ public class ArticleController extends BaseC {
 
     //根据ID获取某个信息
     @RequestMapping("get")
+    @Scope("prototype")
     @ResponseBody
     public void getMessage(HttpServletResponse response,Integer id){
         Article message = articleService.getMessage(id);
@@ -45,6 +47,7 @@ public class ArticleController extends BaseC {
 
 //   添加文章
     @RequestMapping("insert")
+    @Scope("prototype")
     @ResponseBody
     public void insertArticle(HttpServletResponse response,Article article){
 
@@ -59,6 +62,7 @@ public class ArticleController extends BaseC {
 
 //    删除文章
     @RequestMapping("delete")
+    @Scope("prototype")
     @ResponseBody
     public void deleteArticle(HttpServletResponse response,Integer id){
         try{
@@ -71,6 +75,7 @@ public class ArticleController extends BaseC {
 
 //    更新文章
     @RequestMapping("update")
+    @Scope("prototype")
     @ResponseBody
     public void updateArticle(HttpServletResponse response,Article article){
         Article article_r = articleService.getMessage(article.getId());

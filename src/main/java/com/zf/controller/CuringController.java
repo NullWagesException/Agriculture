@@ -27,6 +27,7 @@ public class CuringController extends BaseC{
     }
 
     @RequestMapping("getAll")
+    @Scope("prototype")
     @ResponseBody
     public void get(HttpServletResponse response){
         List<Curing> all = curingService.getAll();
@@ -35,6 +36,7 @@ public class CuringController extends BaseC{
     }
 
     @RequestMapping("get")
+    @Scope("prototype")
     @ResponseBody
     public void getMessage(HttpServletResponse response,Integer id){
         Curing curing = curingService.get(id);
@@ -43,6 +45,7 @@ public class CuringController extends BaseC{
     }
 
     @RequestMapping("insert")
+    @Scope("prototype")
     @ResponseBody
     public void insertArticle(HttpServletResponse response, Curing curing){
         curing.setDate(new Date());
@@ -55,6 +58,7 @@ public class CuringController extends BaseC{
     }
 
     @RequestMapping("delete")
+    @Scope("prototype")
     @ResponseBody
     public void deleteArticle(HttpServletResponse response,Integer id){
         try{
@@ -66,6 +70,7 @@ public class CuringController extends BaseC{
     }
 
     @RequestMapping("update")
+    @Scope("prototype")
     @ResponseBody
     public void updateArticle(HttpServletResponse response,Curing curing){
         Curing curing_r = curingService.get(curing.getId());
