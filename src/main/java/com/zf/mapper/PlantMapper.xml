@@ -8,15 +8,15 @@
 -->
 <mapper namespace="com.zf.mapper.PlantMapper">
 
-    <select id="getAll" resultType="com.zf.pojo.PlantMapper">
+    <select id="getAll" resultType="com.zf.pojo.Plant">
         select * from `plant`
     </select>
 
-    <select id="get" parameterType="int" resultType="com.zf.pojo.PlantMapper">
+    <select id="get" parameterType="int" resultType="com.zf.pojo.Plant">
         select * from `plant` where id=#{id}
     </select>
 
-    <insert id="insert" parameterType="com.zf.pojo.PlantMapper">
+    <insert id="insert" parameterType="com.zf.pojo.Plant">
         insert into `plant` (`name`,`longitude`,`latitude`,`state`) values (#{name},#{longitude},#{latitude},#{state})
     </insert>
 
@@ -24,7 +24,7 @@
         delete from `plant` where id=#{id}
     </delete>
 
-    <update id="update" parameterType="com.zf.pojo.PlantMapper">
+    <update id="update" parameterType="com.zf.pojo.Plant">
         update `plant` set
                                       name=#{name},
                                       longitude=#{longitude},

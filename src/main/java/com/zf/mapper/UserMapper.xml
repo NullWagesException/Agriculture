@@ -19,13 +19,34 @@
         username = #{username} and password = #{password}
     </select>
 
-        <insert id="insertOpenid" parameterType="String" statementType = "PREPARED" keyProperty = "id" useGeneratedKeys = "true">
-        insert into `user` (openid) values (#{openid})
+    <select id="get" parameterType="int" resultType="com.zf.pojo.User">
+        select * from
+            user where
+            id = #{id}
+    </select>
+
+    <select id="getAll" resultType="com.zf.pojo.User">
+        select * from `user`
+    </select>
+
+        <insert id="insert" parameterType="String" statementType = "PREPARED" keyProperty = "id" useGeneratedKeys = "true">
+        insert into `user` (`username`,`password`,`phone`,`position`,`type`,`openid`) values (#{username},#{password},#{phone},#{position},#{type},#{openid})
     </insert>
 
-    <update id="updateOpenid" parameterType="com.zf.pojo.User">
-        update `user` set openid=#{openid} where username=#{username} and password=#{password}
+    <update id="update" parameterType="com.zf.pojo.User">
+        update `user` set
+                          `username`=#{username},
+                          `password`=#{password},
+                          `phone`=#{phone},
+                          `position`=#{position},
+                          `type`=#{type},
+                          `openid`=#{openid},
+        where id=#{id}
     </update>
+
+    <delete id="delete" parameterType="int">
+        delete from `user` where id=#{id}
+    </delete>
 
 
 </mapper>

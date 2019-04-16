@@ -8,10 +8,14 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @RequestMapping("user")
 @Scope("prototype")
@@ -60,7 +64,69 @@ public class UserController extends BaseC{
         }
     }
 
+    @RequestMapping("getAll")
+    @Scope("prototype")
+    @ResponseBody
+    public Object getAll(){
+        Map<String,User> map = new HashMap<>();
+        List<User> all = userService.getAll();
+        int index = 0;
+        for (User user1 : all) {
+            map.put(index + "",user1);
+        }
+        return map;
+    }
 
+    @RequestMapping("insert")
+    @Scope("prototype")
+    @ResponseBody
+    public Object insert(@RequestParam User insertUser){
+        try {
+            userService.insert(insertUser);
+            return "true";
+        }catch (Exception e){
+            e.printStackTrace();
+            return "false";
+        }
+    }
+
+    @RequestMapping("update")
+    @Scope("prototype")
+    @ResponseBody
+    public Object update(@RequestParam User updateUser){
+        try {
+            User user = userService.get(updateUser.getId());
+            if (updateUser.getUsername() != null)
+                user.setUsername(updateUser.getUsername());
+            if (updateUser.getPassword() != null)
+                user.setPassword(updateUser.getPassword());
+            if (updateUser.getPhone() != null)
+                user.setPhone(updateUser.getPhone());
+            if (updateUser.getOpenid() != null)
+                user.setOpenid(updateUser.getOpenid());
+            if (updateUser.getPosition() != null)
+                user.setPosition(updateUser.getPosition());
+            userService.insert(user);
+            return "true";
+        }catch (Exception e){
+            e.printStackTrace();
+            return "false";
+        }
+    }
+
+
+    @RequestMapping("delete")
+    @Scope("prototype")
+    @ResponseBody
+    public Object delete(Integer id){
+        try {
+            userService.delete(id);
+            return "true";
+        }catch (Exception e){
+            e.printStackTrace();
+            return "false";
+        }
+    }
 
 
 

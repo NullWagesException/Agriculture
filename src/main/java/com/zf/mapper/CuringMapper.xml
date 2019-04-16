@@ -4,15 +4,15 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zf.mapper.CuringMapper">
 
-    <select id="getAll" resultType="com.zf.pojo.CuringMapper">
+    <select id="getAll" resultType="com.zf.pojo.Curing">
         select * from `curing`
     </select>
 
-    <select id="get" parameterType="int" resultType="com.zf.pojo.CuringMapper">
+    <select id="get" parameterType="int" resultType="com.zf.pojo.Curing">
         select * from `curing` where id=#{id}
     </select>
 
-    <insert id="insert" parameterType="com.zf.pojo.CuringMapper">
+    <insert id="insert" parameterType="com.zf.pojo.Curing">
         insert into `curing` (`imagepath`,`status`,`expected`,`actual`,`fertilizer_num`,`pesticides_num`,`seedling_num`,`schedule`,`date`,`remarks`)
          values
                 (#{imagepath},#{status},#{expected},#{actual},#{fertilizer_num},#{pesticides_num},#{seedling_num},#{schedule},#{date},#{remarks},)
@@ -22,7 +22,7 @@
         delete from `curing` where id=#{id}
     </delete>
 
-    <update id="update" parameterType="com.zf.pojo.CuringMapper">
+    <update id="update" parameterType="com.zf.pojo.Curing">
         update `curing` set
             imagepath=#{imagepath},
             status=#{status},
