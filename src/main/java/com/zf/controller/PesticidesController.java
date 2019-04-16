@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.zf.pojo.Pesticides;
 import com.zf.service.IPesticidesService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -12,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Controller
+@Scope("prototype")
 @RequestMapping("pesticides")
 public class PesticidesController extends BaseC{
 

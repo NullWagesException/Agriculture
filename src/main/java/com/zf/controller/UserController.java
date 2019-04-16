@@ -4,6 +4,7 @@ import com.zf.myutils.HttpUtils;
 import com.zf.pojo.User;
 import com.zf.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletResponse;
 
 @RequestMapping("user")
+@Scope("prototype")
 @Controller
 public class UserController extends BaseC{
 

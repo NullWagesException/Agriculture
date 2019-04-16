@@ -3,6 +3,7 @@ package com.zf.controller;
 import com.zf.pojo.Images;
 import com.zf.service.IImagesService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@Scope("prototype")
 @RequestMapping("images")
 public class ImagesController extends BaseC{
 
