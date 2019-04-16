@@ -72,9 +72,9 @@ public class PlantController extends BaseC{
 
         if (name != null)
             plant.setName(name);
-        if (name != null)
+        if (longitude != null)
             plant.setLongitude(longitude);
-        if (name != null)
+        if (latitude != null)
             plant.setLatitude(latitude);
         try{
             plantService.update(plant);

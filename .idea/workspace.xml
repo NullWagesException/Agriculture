@@ -7,79 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bfe42c8-9828-4614-a80f-58918babaf8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Agriculture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/controller/BaseC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/controller/BaseC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/controller/CuringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/controller/CuringController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/controller/FertilizerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/controller/FertilizerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/controller/ImagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/controller/ImagesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/controller/PesticidesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/controller/PesticidesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/controller/PlantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/controller/PlantController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/controller/SeedingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/controller/SeedingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Curing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Curing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Fertilizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Fertilizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Images.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Pesticides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Pesticides.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/mapper/PlantMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/mapper/PlantMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Plant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Seeding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/pojo/Seeding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/CuringService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/CuringService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/FertilizerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/FertilizerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/ImagesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/ImagesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/PesticidesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/PesticidesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/PlantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/PlantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/SeedingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/SeedingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zf/service/impl/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/controller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/controller/BaseC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/controller/BaseC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/controller/ImagesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/controller/ImagesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/pojo/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/pojo/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/pojo/Images.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/pojo/Images.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/service/impl/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/service/impl/ArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/service/impl/ImagesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/service/impl/ImagesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/service/impl/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Agriculture.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/controller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/controller/BaseC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/controller/BaseC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/controller/CuringController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/controller/CuringController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/controller/FertilizerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/controller/FertilizerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/controller/ImagesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/controller/ImagesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/controller/PesticidesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/controller/PesticidesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/controller/PlantController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/controller/PlantController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/controller/SeedingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/controller/SeedingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/pojo/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/pojo/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/pojo/Curing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/pojo/Curing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/pojo/Fertilizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/pojo/Fertilizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/pojo/Images.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/pojo/Images.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/pojo/Pesticides.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/pojo/Pesticides.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/pojo/Plant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/pojo/Plant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/pojo/Seeding.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/pojo/Seeding.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/service/impl/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/service/impl/ArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/service/impl/CuringService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/service/impl/CuringService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/service/impl/FertilizerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/service/impl/FertilizerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/service/impl/ImagesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/service/impl/ImagesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/service/impl/PesticidesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/service/impl/PesticidesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/service/impl/PlantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/service/impl/PlantService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/service/impl/SeedingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/service/impl/SeedingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/service/impl/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,9 +27,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Plant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+            <state relative-caret-position="297">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
+                <element signature="e#245#246#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
                 <element signature="e#187#188#0" expanded="true" />
                 <element signature="e#212#213#0" expanded="true" />
                 <element signature="e#243#244#0" expanded="true" />
@@ -107,6 +41,7 @@
                 <element signature="e#338#339#0" expanded="true" />
                 <element signature="e#373#374#0" expanded="true" />
                 <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
                 <element signature="e#469#470#0" expanded="true" />
                 <element signature="e#509#510#0" expanded="true" />
                 <element signature="e#541#542#0" expanded="true" />
@@ -120,57 +55,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Seeding.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/mapper/PlantMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="243">
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/controller/PlantController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1890">
+              <caret line="79" column="39" lean-forward="true" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
               <folding>
-                <element signature="e#123#124#0" expanded="true" />
-                <element signature="e#148#149#0" expanded="true" />
-                <element signature="e#185#186#0" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#244#245#0" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/User.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="351">
+              <caret line="53" column="43" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
               <folding>
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
-                <element signature="e#861#862#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#936#937#0" expanded="true" />
-                <element signature="e#967#968#0" expanded="true" />
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1055#1056#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1157#1158#0" expanded="true" />
-                <element signature="e#1191#1192#0" expanded="true" />
-                <element signature="e#1219#1220#0" expanded="true" />
-                <element signature="e#1246#1247#0" expanded="true" />
-                <element signature="e#1283#1284#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
-                <element signature="e#1350#1351#0" expanded="true" />
-                <element signature="e#1381#1382#0" expanded="true" />
-                <element signature="e#1429#1430#0" expanded="true" />
-                <element signature="e#1469#1470#0" expanded="true" />
-                <element signature="e#1502#1503#0" expanded="true" />
-                <element signature="e#1531#1532#0" expanded="true" />
-                <element signature="e#1575#1576#0" expanded="true" />
-                <element signature="e#1611#1612#0" expanded="true" />
+                <element signature="e#713#714#0" expanded="true" />
+                <element signature="e#759#760#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,41 +94,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
-              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Article.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-              <folding>
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#616#617#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-              </folding>
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -223,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Curing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="486">
               <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="e#442#443#0" expanded="true" />
@@ -295,7 +178,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Images.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
+            <state relative-caret-position="432">
               <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding>
                 <element signature="e#339#340#0" expanded="true" />
@@ -313,8 +196,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Pesticides.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="405">
+              <caret line="23" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="e#132#133#0" expanded="true" />
                 <element signature="e#157#158#0" expanded="true" />
@@ -339,6 +222,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="nullwagesexception &lt;2638627737@qq.com&gt;" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -354,7 +242,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zf/controller/FertilizerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zf/controller/ImagesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zf/controller/PesticidesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zf/controller/PlantController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zf/controller/SeedingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zf/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zf/service/impl/ArticleService.java" />
@@ -365,7 +252,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zf/service/impl/PlantService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zf/service/impl/SeedingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zf/service/impl/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zf/pojo/Plant.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zf/pojo/Article.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zf/pojo/Curing.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zf/pojo/Fertilizer.java" />
@@ -374,6 +260,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zf/pojo/Seeding.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zf/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zf/pojo/Plant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zf/mapper/PlantMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zf/controller/PlantController.java" />
       </list>
     </option>
   </component>
@@ -392,10 +281,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
+    <option name="x" value="951" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -517,15 +405,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555291422137" />
-    <property name="last_opened_file_path" value="D:/mySoftware/Git/bin/git.exe" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555336263290" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/ImageRetrieval" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.27531284" />
@@ -637,18 +526,27 @@
       <workItem from="1555251763429" duration="540000" />
       <workItem from="1555252323394" duration="2663000" />
       <workItem from="1555289734580" duration="406000" />
-      <workItem from="1555290165207" duration="1255000" />
+      <workItem from="1555290165207" duration="2807000" />
+      <workItem from="1555327663919" duration="2665000" />
     </task>
+    <task id="LOCAL-00001" summary="去除了Lombok，兼容性更强">
+      <created>1555291540321</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555291540321</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6474000" />
+    <option name="totallyTimeSpent" value="10691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2386059" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2419571" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -659,7 +557,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.57223797" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33144477" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -694,9 +592,10 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Agriculture" />
     </ignored-roots>
+    <MESSAGE value="去除了Lombok，兼容性更强" />
+    <option name="LAST_COMMIT_MESSAGE" value="去除了Lombok，兼容性更强" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/PlantMapper.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/UserMapper.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/CuringMapper.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/PesticidesMapper.java" />
@@ -734,13 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2592">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>
@@ -806,17 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/controller/PlantController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="41" />
-          <folding>
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/controller/SeedingController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -824,17 +705,6 @@
           <folding>
             <element signature="e#651#652#0" expanded="true" />
             <element signature="e#703#704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -998,9 +868,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="77" column="40" lean-forward="true" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Seeding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding>
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="e#1246#1247#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1531#1532#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1611#1612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Curing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="486">
           <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="e#442#443#0" expanded="true" />
@@ -1068,7 +998,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Images.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
+        <state relative-caret-position="432">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
             <element signature="e#339#340#0" expanded="true" />
@@ -1084,8 +1014,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Pesticides.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="405">
+          <caret line="23" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="e#132#133#0" expanded="true" />
             <element signature="e#157#158#0" expanded="true" />
@@ -1099,11 +1029,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="53" column="43" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+          <folding>
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Plant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="297">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding>
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
             <element signature="e#187#188#0" expanded="true" />
             <element signature="e#212#213#0" expanded="true" />
             <element signature="e#243#244#0" expanded="true" />
@@ -1112,6 +1056,7 @@
             <element signature="e#338#339#0" expanded="true" />
             <element signature="e#373#374#0" expanded="true" />
             <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
             <element signature="e#469#470#0" expanded="true" />
             <element signature="e#509#510#0" expanded="true" />
             <element signature="e#541#542#0" expanded="true" />
@@ -1123,66 +1068,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/Seeding.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/mapper/PlantMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#123#124#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="243">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/pojo/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zf/controller/PlantController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        <state relative-caret-position="1890">
+          <caret line="79" column="39" lean-forward="true" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
           <folding>
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1191#1192#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1381#1382#0" expanded="true" />
-            <element signature="e#1429#1430#0" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-            <element signature="e#1611#1612#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>

@@ -7,6 +7,15 @@ public class Plant {
     private String name;
     private String longitude;
     private String latitude;
+    private Integer state;
+
+    public Integer getState() {
+        return state;
+    }
+
+    public void setState(Integer state) {
+        this.state = state;
+    }
 
     public Integer getId() {
         return id;
