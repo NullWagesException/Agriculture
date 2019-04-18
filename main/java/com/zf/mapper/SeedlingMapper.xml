@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace:命名空间，相当于包名
+    #{}：相当于占位符
+-->
+<mapper namespace="com.zf.mapper.SeedlingMapper">
+
+
+    <select id="getAll" resultType="com.zf.pojo.Seedling">
+        select * from `seedling`
+    </select>
+
+    <select id="get" parameterType="int" resultType="com.zf.pojo.Seedling">
+        select * from `seedling` where id=#{id}
+    </select>
+
+    <insert id="insert" parameterType="com.zf.pojo.Seedling">
+        insert into `seedling` (`name`) values (#{name})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from `seedling` where id=#{id}
+    </delete>
+
+    <update id="update" parameterType="com.zf.pojo.Seedling">
+        update `seedling` set
+                                      name=#{name}
+        where id=#{id}
+    </update>
+
+
+</mapper>
