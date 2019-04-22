@@ -1,0 +1,203 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;  
+	list-style:none; 
+}
+body{
+    margin:0px;
+    padding: 0px;
+    width: 100%;
+}
+.container{
+    width: 80vw;
+    margin: 10px auto;
+    margin-top: 100px;
+    box-shadow: 0px 0px 6px 2px #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+.movingpicture .l{
+	position: absolute;
+	left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.movingpicture .l img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	user-select: none;
+}
+.movingpicture{
+	position: relative;
+	left: 0px;
+	overflow: hidden;
+	width: 100%;
+    height:520px;
+    margin:0px auto;
+    border-radius: 8px;
+}
+.movingpicture .dot_m{
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background-color: white;
+	margin: 0 4px;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+}
+.movingpicture .dot{
+	position: absolute;
+	height: 18px;
+	left: 50%;
+	margin-left: -65px;
+    bottom: 15px;
+}
+
+.movingpicture #current{
+	background-color: orange;
+}
+.movingpicture .lblr{
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+	margin-top: -30px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+	display: none;
+}
+.movingpicture .lblr span{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+    cursor: pointer;
+    margin: 10px;
+}
+.movingpicture .lblr .left{
+	background: url('../images/btn.gif')no-repeat;
+}
+.movingpicture .lblr .right{
+	background: url('../images/btn.gif')no-repeat;
+	background-position: 0px -60px;
+}
+.container .des{
+    font-family: "楷体";
+    font-size: 15px;
+    line-height: 20px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+}
+.container .des li{
+    border:solid 1px #ccc;
+    border-radius: 10px;
+    padding:10px;
+    margin: 20px auto;
+	box-shadow: 0px 0px 7px 2px #ccc;
+	cursor: pointer;
+}
+.container .des li:hover{
+	background-color: #ccc;
+}
+.container .des li h1{
+    margin: 5px;
+}
+.container .des li .date{
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+.container .des li img{
+    border-radius: 6px;
+    margin:0px 10px 10px 0px;
+}
+
+.menceng{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0,0, 0.4)	;
+	z-index: 999;
+	position: fixed;
+	left: 0px;
+	top:0px;
+	display: none;
+}
+
+.toast{
+	position: fixed;
+	left: 50%;
+	top:50%;
+	height: 400px;
+	width: 300px;
+	border:solid 1px #ccc;
+	border-radius: 5px;
+	z-index: 999;
+	margin-top: -200px;
+	margin-left: -150px;
+	background-color: #fff;
+}
+.toast ul{
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+.toast ul li{
+	width: 100%;
+	margin: 10px;
+	padding: 10px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	box-sizing: border-box;
+}
+.toast ul li input[type='file']{
+	width: 200px;
+}
+.toast ul li input[type='text']{
+	border:solid 1px #ccc;
+	height: 30px;
+	width: 200px;
+}
+.toast ul li textarea{
+	resize: none;
+	height: 100px;
+	width: 200px;
+	overflow: auto;
+}
+.toast ul .btn{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.toast ul .btn button:nth-child(1){
+	background-color: #07c160;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #07c160;
+    cursor: pointer;
+    outline: none;
+	width: 70px;
+	height: 30px;
+}
+.toast ul .btn button:nth-child(2){
+	background-color: #f44;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #f44;
+    cursor: pointer;
+    outline: none;
+	width: 70px;
+	height: 30px;
+}

@@ -5,7 +5,6 @@ import com.zf.pojo.Seedling;
 import com.zf.service.ISeedlingService;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -25,18 +24,15 @@ public class SeedlingController extends BaseC{
     private ISeedlingService seedlingService;
 
     @RequestMapping("getAll")
-    @Scope("prototype")
+    
     @ResponseBody
-    public void get(HttpServletResponse response){
+    public Object get(HttpServletResponse response){
         List<Seedling> all = seedlingService.getAll();
-        String str = JSON.toJSONString(all);
-        Map<String,String> map = new HashMap<>();
-        map.put("getAll",str);
-        write(map,response);
+        return all;
     }
 
     @RequestMapping("get")
-    @Scope("prototype")
+    
     @ResponseBody
     public void getMessage(HttpServletResponse response,Integer id){
         Seedling seedling = seedlingService.get(id);
@@ -47,7 +43,7 @@ public class SeedlingController extends BaseC{
     }
 
     @RequestMapping("insert")
-    @Scope("prototype")
+    
     @ResponseBody
     public void insertArticle(HttpServletResponse response,String name){
         Map<String,String> map = new HashMap<>();
@@ -64,7 +60,7 @@ public class SeedlingController extends BaseC{
     }
 
     @RequestMapping("delete")
-    @Scope("prototype")
+    
     @ResponseBody
     public void deleteArticle(HttpServletResponse response,Integer id){
         Map<String,String> map = new HashMap<>();
@@ -79,7 +75,7 @@ public class SeedlingController extends BaseC{
     }
 
     @RequestMapping("update")
-    @Scope("prototype")
+    
     @ResponseBody
     public void updateArticle(HttpServletResponse response, Integer id, String name){
         Map<String,String> map = new HashMap<>();

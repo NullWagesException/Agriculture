@@ -10,6 +10,8 @@ public interface CuringMapper {
 
     Curing get(Integer id);
 
+    List<Curing> getStatus(Integer status);
+
     void insert(Curing article);
 
     void delete(Integer id);

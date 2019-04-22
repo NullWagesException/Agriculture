@@ -1,0 +1,85 @@
+body,ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}
+.all{
+    margin: 200px auto;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1%;
+}
+.all .checkPeople{
+    width: 99%;
+    box-sizing: border-box;
+}
+.all .checkPeople>ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+.all .checkPeople>ul>li{
+    border: 1px #ccc solid;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 6px auto;
+    padding: 5px;
+    position: relative;
+}
+.all .checkPeople>ul>li span{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    white-space: nowrap;
+}
+.all .checkPeople>ul>li span[class=''] .radio{
+    margin: 0px;
+}
+.all .checkPeople>ul>li .addNewPerson{
+    justify-content: left;
+}
+.all .checkPeople>ul>li .addNewPerson input{
+    width: 15px;
+    margin-right: 5px;
+}
+.all .checkPeople>ul>li input{
+    border: 1px #ccc solid;
+    border-radius: 3px;
+    width: 100px;
+    height: 70%;
+}
+.all .checkPeople>ul>li .btn1{
+    background-color: #07c160;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #07c160;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.all .checkPeople>ul>li .btn2{
+    background-color: #f44;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #f44;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    position: absolute;
+    right: 61px;
+    top: 10px;
+}

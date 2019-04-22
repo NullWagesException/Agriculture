@@ -1,34 +1,43 @@
 package com.zf.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.zf.pojo.Curing;
-import com.zf.pojo.Fertilizer;
-import com.zf.pojo.Pesticides;
-import com.zf.pojo.Seedling;
-import com.zf.service.ICuringService;
-import com.zf.service.IFertilizerService;
-import com.zf.service.IPesticidesService;
-import com.zf.service.ISeedlingService;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.zf.pojo.*;
+import com.zf.service.*;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.*;
 
 @Controller
 @RequestMapping("curing")
 public class CuringController extends BaseC{
 
+    @Autowired
+    private IUserService userService;
+
+    public void setUserService(IUserService userService) {
+        this.userService = userService;
+    }
+
 
     @Setter
     @Autowired
     //养护栏服务层
     private ICuringService curingService;
+
+    @Autowired
+    private IUserUpdateService updateService;
+
+    public void setUpdateService(IUserUpdateService updateService) {
+        this.updateService = updateService;
+    }
+
 
     //肥料
     @Setter
@@ -47,18 +56,89 @@ public class CuringController extends BaseC{
 
 
     @RequestMapping("getAll")
-    @Scope("prototype")
+    
     @ResponseBody
-    public Object get(HttpServletResponse response){
+    public Object get(HttpServletResponse response,Integer pageNum){
+
+        Map<String, Object> data = new HashMap<>();
+        Page<Object> objects = PageHelper.startPage(pageNum, 10);
         List<Curing> all = curingService.getAll();
-        String str = JSON.toJSONString(all);
-        Map<String,String> map = new HashMap<>();
-        map.put("getAll",str);
+        data.put("total", objects.getTotal());
+        data.put("nowPage", pageNum);
+        data.put("data", all);
+        return data;
+
+    }
+
+    @RequestMapping("getScale")
+    @ResponseBody
+    public Object getScale(){
+        List<Curing> all = curingService.getAll();
+        int status_0 = 0;
+        int status_1 = 0;
+        int status_2 = 0;
+
+        for (Curing curing : all) {
+            if (curing.getStatus().equals("0"))
+                status_0++;
+            if (curing.getStatus().equals("1"))
+                status_1++;
+            if (curing.getStatus().equals("2"))
+                status_2++;
+        }
+        Map map = new HashMap();
+        map.put("0",status_0);
+        map.put("1",status_1);
+        map.put("2",status_2);
         return map;
     }
 
+    @RequestMapping("getTime")
+    @ResponseBody
+    public Object getTime(){
+        List<Curing> all = curingService.getAll();
+        Map map = new LinkedHashMap();
+        List<Long> timelist = new ArrayList<>();
+        for (Curing curing : all) {
+            timelist.add(curing.getDate().getTime());
+        }
+        Collections.sort(timelist);
+        for (Long aLong : timelist) {
+            Date date = new Date(aLong);
+            date.getTime();
+            String time = date.toLocaleString();
+            time = time.split(" ")[0];
+            if (map.get(time) == null)
+                map.put(time,1);
+            else{
+                int count = (int) map.get(time);
+                map.put(time,++count);
+            }
+        }
+        return map;
+    }
+
+
+
+    //根据状态查询
+    @RequestMapping("getStatus")
+    @ResponseBody
+    public Object getStatus(Integer pageNum,Integer status){
+
+        Map<String, Object> data = new HashMap<>();
+        Page<Object> objects = PageHelper.startPage(pageNum, 10);
+        List<Curing> all = curingService.getStatus(status);
+        data.put("total", objects.getTotal());
+        data.put("nowPage", pageNum);
+        data.put("data", all);
+        return data;
+
+    }
+
+
+
     @RequestMapping("get")
-    @Scope("prototype")
+    
     @ResponseBody
     public void getMessage(HttpServletResponse response,Integer id){
         Curing curing = curingService.get(id);
@@ -75,9 +155,6 @@ public class CuringController extends BaseC{
         map_curing.put("fertilizer_num",curing.getFertilizer_num());
         map_curing.put("pesticides_num",curing.getPesticides_num());
         map_curing.put("seedling_num",curing.getSeedling_num());
-        map_curing.put("fertilizer_id",curing.getFertilizer_id().toString());
-        map_curing.put("pesticides_id",curing.getPesticides_id().toString());
-        map_curing.put("seedling_id",curing.getSeedling_id().toString());
         map_curing.put("schedule",curing.getSchedule());
         map_curing.put("date",curing.getDate().toLocaleString());
         map_curing.put("remarks",curing.getRemarks());
@@ -111,11 +188,27 @@ public class CuringController extends BaseC{
         write(map_all,response);
     }
 
-    @RequestMapping("insert")
-    @Scope("prototype")
+
+    @RequestMapping("test")
     @ResponseBody
-    public void insertArticle(HttpServletResponse response, Curing curing){
+    public Object test(){
+        Map<String, Object> data = new HashMap<>();
+        Integer pageNum = 1;
+        Integer pageSize = 5;
+        Page<Object> objects = PageHelper.startPage(pageNum, pageSize);
+        List<Curing> all = curingService.getAll();
+        data.put("total", objects.getTotal());
+        data.put("nowPage", pageNum);
+        data.put("data", all);
+        return data;
+    }
+
+    @RequestMapping("insert")
+    
+    @ResponseBody
+    public void insertArticle(HttpServletResponse response,Curing curing){
         Map<String,String> map = new HashMap<>();
+        System.out.println(curing);
         curing.setDate(new Date());
         try{
             curingService.insert(curing);
@@ -128,7 +221,7 @@ public class CuringController extends BaseC{
     }
 
     @RequestMapping("delete")
-    @Scope("prototype")
+    
     @ResponseBody
     public void deleteArticle(HttpServletResponse response,Integer id){
         Map<String,String> map = new HashMap<>();
@@ -142,11 +235,14 @@ public class CuringController extends BaseC{
         }
     }
 
+
     @RequestMapping("update")
-    @Scope("prototype")
     @ResponseBody
-    public Object updateArticle(@RequestBody Curing curing){
+    public Object updateArticle(Curing curing, HttpSession session,String openid){
         Map<String,String> map = new HashMap<>();
+        System.out.println();
+        System.out.println(curing);
+        System.out.println();
         Curing curing_r = curingService.get(curing.getId());
         if (curing.getImagepath() != null)
             curing_r.setImagepath(curing.getImagepath());
@@ -174,9 +270,46 @@ public class CuringController extends BaseC{
             curing_r.setPesticides_id(curing.getPesticides_id());
         if (curing.getSeedling_id() != null)
             curing_r.setSeedling_id(curing.getSeedling_id());
-        curing.setDate(new Date());
-        try{
+        curing_r.setDate(new Date());
+
+
+        UpdateUser updateUser = new UpdateUser();
+        updateUser.setName(curing_r.getName());
+        updateUser.setUpdateid(curing_r.getId());
+        updateUser.setActual(curing_r.getActual());
+        updateUser.setExpected(curing_r.getExpected());
+        updateUser.setFertilizer_id(curing_r.getFertilizer_id());
+        updateUser.setFertilizer_num(curing_r.getFertilizer_num());
+        updateUser.setImagepath(curing_r.getImagepath());
+        updateUser.setPesticides_id(curing_r.getPesticides_id());
+        updateUser.setPesticides_num(curing_r.getPesticides_num());
+        updateUser.setRemarks(curing_r.getRemarks());
+        updateUser.setSchedule(curing_r.getSchedule());
+        updateUser.setSeedling_id(curing_r.getSeedling_id());
+        updateUser.setSeedling_num(curing_r.getSeedling_num());
+        updateUser.setStatus(curing_r.getStatus());
+        //从session中获取用户数据
+        User qurUser = userService.findByOpenId(openid);
+
+        if (qurUser == null){
+            if(UserController.type == 2) {
+                curingService.update(curing_r);
+                map.put("result","ture");
+                return map;
+            }
+        }else if(qurUser.getType() == 2) {
             curingService.update(curing_r);
+            map.put("result","ture");
+            return map;
+        }
+        if (qurUser!=null)
+            updateUser.setUsername(qurUser.getName());
+        updateUser.setAllow(0);
+        System.out.println();
+        System.out.println(updateUser);
+        System.out.println();
+        try{
+            updateService.insert(updateUser);
             map.put("result","ture");
         }catch (Exception e){
             map.put("result","false");

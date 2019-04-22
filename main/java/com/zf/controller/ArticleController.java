@@ -4,7 +4,6 @@ import com.zf.pojo.Article;
 import com.zf.service.IArticleService;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -25,27 +24,24 @@ public class ArticleController extends BaseC {
 
     //获取简略信息
     @RequestMapping("getAll")
-    @Scope("prototype")
     @ResponseBody
-    public void getSimpleMessage(HttpServletResponse response){
+    public Object getSimpleMessage(){
         List<Article> simpleMessage = articleService.getSimpleMessage();
-        Map<String,Map> all = new HashMap<>();
-        int index = 0;
-        for (Article article : simpleMessage) {
-            Map<String,String> map = new HashMap<>();
-            map.put("id",article.getId().toString());
-            map.put("imgUrl",article.getImagepath());
-            map.put("text",article.getTitle());
-            map.put("date",article.getTime().toLocaleString());
-            all.put(index + "",map);
-            index++;
-        }
-        write(all,response);
+        return simpleMessage;
     }
+
+    //获取简略信息
+    @RequestMapping("getAllPC")
+    @ResponseBody
+    public Object getAllPC(){
+        List<Article> allPC = articleService.getAllPC();
+        return allPC;
+    }
+
 
     //根据ID获取某个信息
     @RequestMapping("get")
-    @Scope("prototype")
+   
     @ResponseBody
     public void getMessage(HttpServletResponse response,Integer id){
         Article message = articleService.getMessage(id);
@@ -62,7 +58,7 @@ public class ArticleController extends BaseC {
 
 //   添加文章
     @RequestMapping("insert")
-    @Scope("prototype")
+   
     @ResponseBody
     public void insertArticle(HttpServletResponse response,Article article){
         Map<String,String> map = new HashMap<>();
@@ -79,7 +75,7 @@ public class ArticleController extends BaseC {
 
 //    删除文章
     @RequestMapping("delete")
-    @Scope("prototype")
+   
     @ResponseBody
     public void deleteArticle(HttpServletResponse response,Integer id){
         Map<String,String> map = new HashMap<>();
@@ -93,9 +89,9 @@ public class ArticleController extends BaseC {
         }
     }
 
-//    更新文章
+    //    更新文章
     @RequestMapping("update")
-    @Scope("prototype")
+   
     @ResponseBody
     public void updateArticle(HttpServletResponse response,Article article){
         Map<String,String> map = new HashMap<>();

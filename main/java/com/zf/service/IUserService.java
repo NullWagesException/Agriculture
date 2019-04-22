@@ -19,4 +19,8 @@ public interface IUserService {
     void update(User user);
 
     void delete(Integer id);
+
+    User findUsername(String username);
+
+    User findByOpenId(String openid);
 }

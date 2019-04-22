@@ -49,4 +49,14 @@ public class UserService implements IUserService {
     public void delete(Integer id) {
         userMapper.delete(id);
     }
+
+    @Override
+    public User findUsername(String username) {
+        return userMapper.findUsername(username);
+    }
+
+    @Override
+    public User findByOpenId(String openid) {
+        return userMapper.findByOpenId(openid);
+    }
 }

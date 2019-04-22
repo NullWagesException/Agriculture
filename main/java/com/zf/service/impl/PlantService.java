@@ -4,9 +4,10 @@ import com.zf.mapper.PlantMapper;
 import com.zf.pojo.Plant;
 import com.zf.service.IPlantService;
 import lombok.Setter;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-
+@Transactional
 public class PlantService implements IPlantService {
 
     @Setter

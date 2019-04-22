@@ -9,6 +9,9 @@ public interface ArticleMapper {
     //<!--获取简略信息-->
     List<Article> getSimpleMessage();
 
+    //<!--获取简略信息-->
+    List<Article> getAllPC();
+
     //<!--获取单个详细信息-->
     Article getMessage(Integer id);
 

@@ -10,6 +10,11 @@
         select id,title,time,imagepath from `article`
     </select>
 
+    <!--获取简略信息-->
+    <select id="getAllPC" resultType="com.zf.pojo.Article">
+        select * from `article`
+    </select>
+
     <!--获取详细信息-->
     <select id="getMessage" parameterType="int" resultType="com.zf.pojo.Article">
         select * from `article` where id=#{id}

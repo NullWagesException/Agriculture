@@ -5,7 +5,6 @@ import com.zf.pojo.Plant;
 import com.zf.service.IPlantService;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -25,26 +24,15 @@ public class PlantController extends BaseC{
     private IPlantService plantService;
 
     @RequestMapping("getAll")
-    @Scope("prototype")
+    
     @ResponseBody
-    public void get(HttpServletResponse response){
+    public Object get(HttpServletResponse response){
         List<Plant> all = plantService.getAll();
-        Map<String,Map> allmap = new HashMap<>();
-        int index = 0;
-        for (Plant plant : all) {
-            Map<String,String> map = new HashMap<>();
-            map.put("id",plant.getId().toString());
-            map.put("name",plant.getName());
-            map.put("longitude",plant.getLongitude());
-            map.put("latitude",plant.getLatitude());
-            allmap.put(index + "",map);
-            index++;
-        }
-        write(allmap,response);
+        return all;
     }
 
     @RequestMapping("get")
-    @Scope("prototype")
+    
     @ResponseBody
     public void getMessage(HttpServletResponse response,Integer id){
         Plant plant = plantService.get(id);
@@ -55,7 +43,7 @@ public class PlantController extends BaseC{
     }
 
     @RequestMapping("insert")
-    @Scope("prototype")
+    
     @ResponseBody
     public void insertArticle(HttpServletResponse response,String name,String longitude,String latitude){
         Plant plant = new Plant();
@@ -74,7 +62,7 @@ public class PlantController extends BaseC{
     }
 
     @RequestMapping("delete")
-    @Scope("prototype")
+    
     @ResponseBody
     public void deleteArticle(HttpServletResponse response,Integer id){
         Map<String,String> map = new HashMap<>();
@@ -89,7 +77,7 @@ public class PlantController extends BaseC{
     }
 
     @RequestMapping("update")
-    @Scope("prototype")
+    
     @ResponseBody
     public void updateArticle(HttpServletResponse response, Integer id, String name,String longitude,String latitude){
         Plant plant = plantService.get(id);

@@ -1,5 +1,8 @@
 package com.zf.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Curing {
@@ -14,11 +17,13 @@ public class Curing {
     private String pesticides_num;
     private String seedling_num;
     private String schedule;
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date date;
     private String remarks;
     private Integer fertilizer_id;
     private Integer pesticides_id;
     private Integer seedling_id;
+
 
     public String getName() {
         return name;
@@ -124,6 +129,7 @@ public class Curing {
         this.schedule = schedule;
     }
 
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     public Date getDate() {
         return date;
     }

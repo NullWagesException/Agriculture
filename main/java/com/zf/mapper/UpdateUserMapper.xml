@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace:命名空间，相当于包名
+    #{}：相当于占位符
+-->
+<mapper namespace="com.zf.mapper.UpdateUserMapper">
+
+    <!--
+        id：语句唯一标识
+        parameterType：传参类型
+        resultType：返回类型
+    -->
+
+    <select id="get" parameterType="int" resultType="com.zf.pojo.UpdateUser">
+        select * from
+            `UpdateUser` where
+            id = #{id}
+    </select>
+
+    <select id="getAll" resultType="com.zf.pojo.UpdateUser">
+        select * from `UpdateUser`
+    </select>
+
+    <select id="getAllow" parameterType="int" resultType="com.zf.pojo.UpdateUser">
+        select * from `UpdateUser` where allow = #{allow}
+    </select>
+
+    <insert id="insert" parameterType="com.zf.pojo.UpdateUser" statementType = "PREPARED" keyProperty = "id" useGeneratedKeys = "true">
+        insert into `UpdateUser` (
+                                  `updateid`,`allow`,`imagepath`,
+                                  `status`,`expected`,`actual`,
+                                  `name`,`fertilizer_num`,`pesticides_num`,
+                                  `seedling_num`,`schedule`,`username`) values
+                                  (#{updateid},#{allow},#{imagepath},#{status},
+                                   #{expected},#{actual},#{name},#{fertilizer_num},
+                                   #{pesticides_num},#{seedling_num},#{schedule},#{username})
+    </insert>
+
+    <update id="update" parameterType="com.zf.pojo.UpdateUser">
+        update `UpdateUser` set
+                          `imagepath`=#{imagepath},
+                          `status`=#{status},
+                          `expected`=#{expected},
+                          `name`=#{name},
+                          `fertilizer_num`=#{fertilizer_num},
+                          `pesticides_num`=#{pesticides_num},
+                          `seedling_num`=#{seedling_num},
+                          `schedule`=#{schedule},
+                          `status`=#{status},
+                          `date`=#{date},
+                          `remarks`=#{remarks},
+                          `fertilizer_id`=#{fertilizer_id},
+                          `pesticides_id`=#{pesticides_id},
+                          `seedling_id`=#{seedling_id},
+                          `allow`=#{allow}
+                          where updateid=#{updateid}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        delete from `UpdateUser` where id=#{id}
+    </delete>
+
+
+</mapper>

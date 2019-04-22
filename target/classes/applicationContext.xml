@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
-        http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+        http://www.springframework.org/schema/context/spring-context-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!--加载数据库配置文件-->
     <context:property-placeholder location="classpath:jdbc.properties"/>
@@ -37,6 +38,10 @@
         <property name="userMapper" ref="userMapper"/>
     </bean>
 
+    <bean id="UserUpdateService" class="com.zf.service.impl.UserUpdareService">
+        <property name="userMapper" ref="updateUserMapper"/>
+    </bean>
+
     <bean id="ImageService" class="com.zf.service.impl.ImagesService">
         <property name="imagesMapper" ref="imagesMapper"/>
     </bean>
@@ -45,8 +50,8 @@
         <property name="articleMapper" ref="articleMapper"/>
     </bean>
 
-    <bean id="SeedingService" class="com.zf.service.impl.SeedingService">
-        <property name="seedingMapper" ref="seedingMapper"/>
+    <bean id="SeedlingService" class="com.zf.service.impl.SeedlingService">
+        <property name="seedlingMapper" ref="seedlingMapper"/>
     </bean>
 
     <bean id="Fertilizer" class="com.zf.service.impl.FertilizerService">
@@ -70,5 +75,14 @@
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <property name="basePackage" value="com.zf.mapper"/>
     </bean>
+
+    <!-- 配置事物管理类 -->
+    <bean id="TransactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="druid" />
+    </bean>
+
+    <!-- 开启注解式事物扫描 -->
+    <tx:annotation-driven transaction-manager="TransactionManager"/>
 
 </beans>

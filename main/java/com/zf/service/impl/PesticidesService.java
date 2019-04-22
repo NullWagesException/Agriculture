@@ -4,9 +4,10 @@ import com.zf.mapper.PesticidesMapper;
 import com.zf.pojo.Pesticides;
 import com.zf.service.IPesticidesService;
 import lombok.Setter;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-
+@Transactional
 public class PesticidesService implements IPesticidesService {
     
     @Setter

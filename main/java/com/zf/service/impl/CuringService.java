@@ -4,9 +4,11 @@ import com.zf.mapper.CuringMapper;
 import com.zf.pojo.Curing;
 import com.zf.service.ICuringService;
 import lombok.Setter;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Transactional
 public class CuringService implements ICuringService {
 
     @Setter
@@ -35,5 +37,10 @@ public class CuringService implements ICuringService {
     @Override
     public void update(Curing article) {
         curingMapper.update(article);
+    }
+
+    @Override
+    public List<Curing> getStatus(Integer status) {
+        return curingMapper.getStatus(status);
     }
 }

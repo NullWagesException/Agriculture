@@ -1,0 +1,137 @@
+body,ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}
+.all{
+    margin: 200px auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.all h1{
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+.all table{
+    border: solid 1px #ccc;
+    margin: 0px auto;
+    /* width: 100%; */
+}
+.all table th,td{
+    border: solid 1px #ccc;
+    text-align: center;
+    white-space: nowrap;
+}
+.all table td button:nth-child(1){
+    background-color: #f44;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #f44;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+}
+.all table td button:nth-child(2){
+    background-color: #07c160;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #07c160;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+}
+.all table th,td input{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    overflow: auto;
+}
+.addNewTask button{
+    background-color: #07c160!important;
+    border: 1px solid #07c160!important;
+    width: 100px!important;
+}
+
+
+
+/* .all .checkPeople{
+    width: 99%;
+    box-sizing: border-box;
+}
+.all .checkPeople>ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.all .checkPeople>ul>li{
+    border: 1px #ccc solid;
+    border-radius: 3px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 10px 10px 0px;
+    flex-direction: column;
+}
+.all .checkPeople>ul>li img{
+    width: 250px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+.all .checkPeople>ul>li span{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 20px;
+    margin: 10px;
+    padding-left: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+.all .checkPeople>ul>li span input{
+    width: 150px;
+    border: 1px #ccc solid;
+    border-radius: 3px;
+    height: 100%;
+}
+.all .checkPeople>ul>li span .numInput{
+    width: 50px;
+    margin-left: 10px;
+}
+.all .checkPeople>ul>li span input[class='radioGroup']{
+    display: inline;
+    width: 13px;
+    margin-right: 2px;
+}
+.all .checkPeople>ul>li .btn1{
+    background-color: #07c160;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #07c160;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+}
+.all .checkPeople>ul>li .btn2{
+    background-color: #f44;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #f44;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    margin: 10px;
+}
+textarea{
+    width: 125px;
+    resize: none;
+} */

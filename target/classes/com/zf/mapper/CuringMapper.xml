@@ -12,6 +12,10 @@
         select * from `curing` where id=#{id}
     </select>
 
+    <select id="getStatus" parameterType="int" resultType="com.zf.pojo.Curing">
+        select * from `curing` where status=#{status}
+    </select>
+
     <insert id="insert" parameterType="com.zf.pojo.Curing">
         insert into `curing` (`imagepath`,`name`,`status`,`expected`,`actual`,`fertilizer_num`,`pesticides_num`,`seedling_num`,`schedule`,`date`,`remarks`,`fertilizer_id`,`pesticides_id`,`seedling_id`)
          values

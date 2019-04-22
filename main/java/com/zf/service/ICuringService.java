@@ -16,4 +16,6 @@ public interface ICuringService {
 
     void update(Curing article);
 
+    List<Curing> getStatus(Integer status);
+
 }

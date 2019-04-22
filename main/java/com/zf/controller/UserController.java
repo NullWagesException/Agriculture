@@ -4,23 +4,27 @@ import com.alibaba.fastjson.JSON;
 import com.zf.myutils.HttpUtils;
 import com.zf.pojo.User;
 import com.zf.service.IUserService;
+import com.zf.service.IUserUpdateService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.HashMap;
+import javax.servlet.http.HttpSession;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
-import java.util.Map;
 
 @RequestMapping("user")
+@SessionAttributes("qurUser")
 @Controller
 public class UserController extends BaseC{
+
+    public static Integer type = 0;
 
     @Autowired
     private IUserService userService;
@@ -29,67 +33,122 @@ public class UserController extends BaseC{
         this.userService = userService;
     }
 
+    @Autowired
+    private IUserUpdateService updateService;
+
+    public void setUpdateService(IUserUpdateService updateService) {
+        this.updateService = updateService;
+    }
+
     private String code;
-    private User user = new User();
+    private User myuser = new User();
 
     @RequestMapping("findUserById")
-    @Scope("prototype")
     @ResponseBody
     //对用户未进行登陆时，验证用户名密码以及返回登录态
-    public ModelAndView findUserById(@PathVariable("code") String code, String username, String password){
+    public ModelAndView findUserById(String code, String username, String password){
 //        User user = userService.findUserById(id);
         ModelAndView mv = new ModelAndView("forward:/user/getKeyAndID");
 
         //接收前端传来的值
         this.code = code;
-        user.setUsername(username);
-        user.setPassword(password);
+        myuser.setUsername(username);
+        myuser.setPassword(password);
         return mv;
     }
 
     @RequestMapping("getKeyAndID")
-    @Scope("prototype")
+    
     @ResponseBody
-    public void getKeyAndID(HttpServletResponse response){
+    public Object getKeyAndID(HttpServletResponse response, HttpSession session){
         String targetData = HttpUtils.getTargetData("https://api.weixin.qq.com/sns/jscode2session?appid=wx1a4fb0ccc09a8183&secret=e9b15594b074af72d5e03337b77fddd9&js_code=" + code + "&grant_type=authorization_code");
-        String[] split = targetData.split("'");
-        String openid = split[split.length-1];
+        String[] split = targetData.split("openid");
+        String openid = split[split.length-1].substring(3,split[split.length-1].length()-2);
         System.out.println(openid);
+        User byOpenId = userService.findByOpenId(openid);
         //检查用户名和密码是否正确
-        User qurUser = userService.findUser(this.user);
+        User qurUser = userService.findUser(this.myuser);
         if (qurUser != null){
+            //如果是另一个账户,去除前一位openID，更新为当前位
+            if (byOpenId != null){
+                if (byOpenId.getUsername().equals(qurUser.getUsername())){
+                    byOpenId.setOpenid("");
+                    userService.update(byOpenId);
+                }
+            }
+
             //存入openID
-            userService.updateOpenid(user);
-            ajaxReturn(true,targetData,response);
+            session.setAttribute("qurUser",qurUser);
+            qurUser.setOpenid(openid);
+            userService.updateOpenid(qurUser);
+            type = 0;
+            return qurUser;
+        }else{
+            return "false";
         }
     }
 
     @RequestMapping("getAll")
-    @Scope("prototype")
+    
     @ResponseBody
     public Object getAll(){
-        Map<String,User> map = new HashMap<>();
         List<User> all = userService.getAll();
-        int index = 0;
-        for (User user1 : all) {
-            map.put(index + "",user1);
-            index++;
+        return all;
+    }
+
+    @RequestMapping("adminlogin")
+    @ResponseBody
+    public Object adminlogin(User user,HttpSession session,HttpServletResponse response, HttpServletRequest request){
+
+        User qurUser = userService.findUser(user);
+        if (qurUser == null){
+            type = 0;
+//            try {
+//                addCookie("0",response,request);
+//            } catch (UnsupportedEncodingException e) {
+//                e.printStackTrace();
+//            }
+            return "false";
         }
-        return map;
+        if (qurUser.getType() == 2){
+            type = qurUser.getType();
+            session.setAttribute("qurUser",qurUser);
+//            try {
+//                addCookie(qurUser.getType()+"",response,request);
+//            } catch (UnsupportedEncodingException e) {
+//                e.printStackTrace();
+//            }
+            return "true";
+        }else{
+            type = 0;
+            return "false";
+        }
+
+    }
+
+    public static void addCookie(String type,HttpServletResponse response, HttpServletRequest request) throws UnsupportedEncodingException {
+        //创建cookie
+        Cookie nameCookie = new Cookie("type", type);
+        nameCookie.setPath(request.getContextPath()+"/");//设置cookie路径
+        //设置cookie保存的时间 单位：秒
+        nameCookie.setMaxAge(7*24*60*60);
+        //将cookie添加到响应
+        response.addCookie(nameCookie);
     }
 
     @RequestMapping("get")
-    @Scope("prototype")
     @ResponseBody
     public Object get(Integer id){
         User user = userService.get(id);
         return JSON.toJSONString(user);
     }
 
-    @RequestMapping("insert")
-    @Scope("prototype")
+    @RequestMapping(value = "insert",produces="text/html; charset=UTF-8")
     @ResponseBody
-    public Object insert(@RequestParam User insertUser){
+    public Object insert(User insertUser){
+        User user = userService.findUsername(insertUser.getUsername());
+        if (user != null)
+            return "用户已存在";
         try {
             userService.insert(insertUser);
             return "true";
@@ -100,9 +159,8 @@ public class UserController extends BaseC{
     }
 
     @RequestMapping("update")
-    @Scope("prototype")
     @ResponseBody
-    public Object update(@RequestParam User updateUser){
+    public Object update(User updateUser){
         try {
             User user = userService.get(updateUser.getId());
             if (updateUser.getUsername() != null)
@@ -115,7 +173,9 @@ public class UserController extends BaseC{
                 user.setOpenid(updateUser.getOpenid());
             if (updateUser.getPosition() != null)
                 user.setPosition(updateUser.getPosition());
-            userService.insert(user);
+            if (updateUser.getName() != null)
+                user.setName(updateUser.getName());
+            userService.update(user);
             return "true";
         }catch (Exception e){
             e.printStackTrace();
@@ -125,7 +185,6 @@ public class UserController extends BaseC{
 
 
     @RequestMapping("delete")
-    @Scope("prototype")
     @ResponseBody
     public Object delete(Integer id){
         try {

@@ -1,0 +1,22 @@
+/* 地图组件 */
+#container {width:100vw; height: 100vh; z-index: 10;}
+.amap-icon img {
+    width: 25px;
+    height: 34px;
+}
+
+.amap-marker-label{
+    border: 0;
+    background-color: transparent;
+}
+
+.info{
+    position: relative;
+    top: 0;
+    right: 0;
+    min-width: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 5px 1px #ccc;
+}  

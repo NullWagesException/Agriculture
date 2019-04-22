@@ -20,6 +20,11 @@ public class ArticleService implements IArticleService {
     }
 
     @Override
+    public List<Article> getAllPC() {
+        return articleMapper.getAllPC();
+    }
+
+    @Override
     public Article getMessage(Integer id) {
         return articleMapper.getMessage(id);
     }

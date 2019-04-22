@@ -4,9 +4,10 @@ import com.zf.mapper.FertilizerMapper;
 import com.zf.pojo.Fertilizer;
 import com.zf.service.IFertilizerService;
 import lombok.Setter;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-
+@Transactional
 public class FertilizerService implements IFertilizerService {
     
     @Setter

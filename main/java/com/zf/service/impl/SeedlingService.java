@@ -4,9 +4,10 @@ import com.zf.mapper.SeedlingMapper;
 import com.zf.pojo.Seedling;
 import com.zf.service.ISeedlingService;
 import lombok.Setter;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-
+@Transactional
 public class SeedlingService implements ISeedlingService {
 
     @Setter

@@ -10,6 +10,7 @@ public class User {
     private int type;
     private String position;
     private String openid;
+    private String name;
 
     @Override
     public String toString() {
@@ -21,7 +22,16 @@ public class User {
                 ", type=" + type +
                 ", position='" + position + '\'' +
                 ", openid='" + openid + '\'' +
+                ", name='" + name + '\'' +
                 '}';
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getId() {
