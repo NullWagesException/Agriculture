@@ -71,10 +71,8 @@ public class UserController extends BaseC{
         if (qurUser != null){
             //如果是另一个账户,去除前一位openID，更新为当前位
             if (byOpenId != null){
-                if (byOpenId.getUsername().equals(qurUser.getUsername())){
                     byOpenId.setOpenid("");
                     userService.update(byOpenId);
-                }
             }
 
             //存入openID
@@ -84,7 +82,7 @@ public class UserController extends BaseC{
             type = 0;
             return qurUser;
         }else{
-            return "false";
+            return "NotExistent";
         }
     }
 

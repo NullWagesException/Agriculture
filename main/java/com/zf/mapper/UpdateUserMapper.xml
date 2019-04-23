@@ -30,11 +30,11 @@
 
     <insert id="insert" parameterType="com.zf.pojo.UpdateUser" statementType = "PREPARED" keyProperty = "id" useGeneratedKeys = "true">
         insert into `UpdateUser` (
-                                  `updateid`,`allow`,`imagepath`,
+                                  `updateid`,`allow`,`imagepath`,`longitude`,`latitude`,
                                   `status`,`expected`,`actual`,
                                   `name`,`fertilizer_num`,`pesticides_num`,
                                   `seedling_num`,`schedule`,`username`) values
-                                  (#{updateid},#{allow},#{imagepath},#{status},
+                                  (#{updateid},#{allow},#{imagepath},#{longitude},#{latitude},#{status},
                                    #{expected},#{actual},#{name},#{fertilizer_num},
                                    #{pesticides_num},#{seedling_num},#{schedule},#{username})
     </insert>
@@ -43,6 +43,8 @@
         update `UpdateUser` set
                           `imagepath`=#{imagepath},
                           `status`=#{status},
+                          longitude=#{longitude},
+                          latitude=#{latitude},
                           `expected`=#{expected},
                           `name`=#{name},
                           `fertilizer_num`=#{fertilizer_num},
@@ -56,7 +58,7 @@
                           `pesticides_id`=#{pesticides_id},
                           `seedling_id`=#{seedling_id},
                           `allow`=#{allow}
-                          where updateid=#{updateid}
+                          where id=#{id}
     </update>
 
     <delete id="delete" parameterType="int">

@@ -71,10 +71,10 @@ public class UserUpdateController {
     @RequestMapping("update")
     
     @ResponseBody
-    public Object update(Integer id){
+    public Object update(Integer id,Integer allow){
         try {
             UpdateUser updateUser = updateService.get(id);
-            updateUser.setAllow(1);
+            updateUser.setAllow(allow);
             Integer updateid = updateUser.getUpdateid();
             Curing curing = curingService.get(updateid);
             if (updateUser.getName() != null)
@@ -84,6 +84,7 @@ public class UserUpdateController {
             if (updateUser.getActual() != null)
                 curing.setActual(updateUser.getActual());
             curing.setDate(new Date());
+            updateUser.setDate(new Date());
             if (updateUser.getExpected() != null)
                 curing.setExpected(updateUser.getExpected());
             if (updateUser.getFertilizer_id() != null)
@@ -106,6 +107,10 @@ public class UserUpdateController {
                 curing.setSeedling_num(updateUser.getSeedling_num());
             if (updateUser.getStatus() != null)
                 curing.setStatus(updateUser.getStatus());
+            if (updateUser.getLongitude() != null)
+                curing.setLongitude(updateUser.getLongitude());
+            if (updateUser.getLatitude() != null)
+                curing.setLatitude(updateUser.getLatitude());
             System.out.println();
             System.out.println(curing);
             System.out.println();

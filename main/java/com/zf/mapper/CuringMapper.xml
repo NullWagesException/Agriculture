@@ -17,9 +17,9 @@
     </select>
 
     <insert id="insert" parameterType="com.zf.pojo.Curing">
-        insert into `curing` (`imagepath`,`name`,`status`,`expected`,`actual`,`fertilizer_num`,`pesticides_num`,`seedling_num`,`schedule`,`date`,`remarks`,`fertilizer_id`,`pesticides_id`,`seedling_id`)
+        insert into `curing` (`imagepath`,`name`,`longitude`,`latitude`,`status`,`expected`,`actual`,`fertilizer_num`,`pesticides_num`,`seedling_num`,`schedule`,`date`,`remarks`,`fertilizer_id`,`pesticides_id`,`seedling_id`)
          values
-                (#{imagepath},#{name},#{status},#{expected},#{actual},#{fertilizer_num},#{pesticides_num},#{seedling_num},#{schedule},#{date},#{remarks},#{fertilizer_id},#{pesticides_id},#{seedling_num})
+                (#{imagepath},#{name},#{longitude},#{latitude},#{status},#{expected},#{actual},#{fertilizer_num},#{pesticides_num},#{seedling_num},#{schedule},#{date},#{remarks},#{fertilizer_id},#{pesticides_id},#{seedling_num})
     </insert>
 
     <delete id="delete" parameterType="int">
@@ -30,6 +30,8 @@
         update `curing` set
             imagepath=#{imagepath},
             status=#{status},
+            longitude=#{longitude},
+            latitude=#{latitude},
             expected=#{expected},
             actual=#{actual},
             fertilizer_num=#{fertilizer_num},

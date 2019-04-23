@@ -58,10 +58,12 @@ public class CuringController extends BaseC{
     @RequestMapping("getAll")
     
     @ResponseBody
-    public Object get(HttpServletResponse response,Integer pageNum){
+    public Object get(HttpServletResponse response,Integer pageNum,Integer pageSize){
 
         Map<String, Object> data = new HashMap<>();
-        Page<Object> objects = PageHelper.startPage(pageNum, 10);
+        if (pageSize == null)
+            pageSize = 10;
+        Page<Object> objects = PageHelper.startPage(pageNum, pageSize);
         List<Curing> all = curingService.getAll();
         data.put("total", objects.getTotal());
         data.put("nowPage", pageNum);
@@ -140,71 +142,15 @@ public class CuringController extends BaseC{
     @RequestMapping("get")
     
     @ResponseBody
-    public void getMessage(HttpServletResponse response,Integer id){
+    public Object getMessage(HttpServletResponse response,Integer id){
         Curing curing = curingService.get(id);
         if (curing == null)
-            return;
-        Map<String,String> map_curing = new HashMap<>();
-        //存入养护栏所有信息
-        map_curing.put("id",curing.getId().toString());
-        map_curing.put("imagepath",curing.getImagepath());
-        map_curing.put("status",curing.getStatus());
-        map_curing.put("expected",curing.getExpected());
-        map_curing.put("name",curing.getName());
-        map_curing.put("actual",curing.getActual());
-        map_curing.put("fertilizer_num",curing.getFertilizer_num());
-        map_curing.put("pesticides_num",curing.getPesticides_num());
-        map_curing.put("seedling_num",curing.getSeedling_num());
-        map_curing.put("schedule",curing.getSchedule());
-        map_curing.put("date",curing.getDate().toLocaleString());
-        map_curing.put("remarks",curing.getRemarks());
-
-        //获取肥料信息
-        List<String> list_fertilizer = new ArrayList<>();
-        List<Fertilizer> fertilizer = fertilizerService.getAll();
-        for (Fertilizer fertilizer1 : fertilizer) {
-            list_fertilizer.add(fertilizer1.getName());
-        }
-
-        //获取农药信息
-        List<String> list_pesticides = new ArrayList<>();
-        List<Pesticides> pesticides = pesticidesService.getAll();
-        for (Pesticides pesticides1 : pesticides) {
-            list_pesticides.add(pesticides1.getName());
-        }
-
-        //获取树苗信息
-        List<String> list_seeding = new ArrayList<>();
-        List<Seedling> seedling = seedingService.getAll();
-        for (Seedling seedling1 : seedling) {
-            list_seeding.add(seedling1.getName());
-        }
-
-        Map<String,Object> map_all = new HashMap<>();
-        map_all.put("curing",map_curing);
-        map_all.put("fertilizer",list_fertilizer);
-        map_all.put("pesticides",list_pesticides);
-        map_all.put("seeding",list_seeding);
-        write(map_all,response);
+            return null;
+        return curing;
     }
 
-
-    @RequestMapping("test")
-    @ResponseBody
-    public Object test(){
-        Map<String, Object> data = new HashMap<>();
-        Integer pageNum = 1;
-        Integer pageSize = 5;
-        Page<Object> objects = PageHelper.startPage(pageNum, pageSize);
-        List<Curing> all = curingService.getAll();
-        data.put("total", objects.getTotal());
-        data.put("nowPage", pageNum);
-        data.put("data", all);
-        return data;
-    }
 
     @RequestMapping("insert")
-    
     @ResponseBody
     public void insertArticle(HttpServletResponse response,Curing curing){
         Map<String,String> map = new HashMap<>();
@@ -270,6 +216,10 @@ public class CuringController extends BaseC{
             curing_r.setPesticides_id(curing.getPesticides_id());
         if (curing.getSeedling_id() != null)
             curing_r.setSeedling_id(curing.getSeedling_id());
+        if (curing.getLatitude() != null)
+            curing_r.setLatitude(curing.getLatitude());
+        if (curing.getLongitude() != null)
+            curing_r.setLongitude(curing.getLongitude());
         curing_r.setDate(new Date());
 
 
@@ -288,6 +238,8 @@ public class CuringController extends BaseC{
         updateUser.setSeedling_id(curing_r.getSeedling_id());
         updateUser.setSeedling_num(curing_r.getSeedling_num());
         updateUser.setStatus(curing_r.getStatus());
+        updateUser.setLatitude(curing_r.getLatitude());
+        updateUser.setLongitude(curing_r.getLongitude());
         //从session中获取用户数据
         User qurUser = userService.findByOpenId(openid);
 

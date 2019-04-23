@@ -23,7 +23,24 @@ public class Curing {
     private Integer fertilizer_id;
     private Integer pesticides_id;
     private Integer seedling_id;
+    private String longitude;
+    private String latitude;
 
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
 
     public String getName() {
         return name;
