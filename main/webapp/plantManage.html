@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <script src="script/checkSession.js"/>
     <link href="style/base.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style/plantManage.css">
-    <title>人员管理</title>
+    <title>植物信息管理</title>
 </head>
 <body>
     <!--头部菜单-->
@@ -18,7 +20,7 @@
                     </div>
                     <div class="t_c_bottom">
                         <ul>
-                            <li >
+                            <li>
                                 <a href="index.html"><em>首页</em><i>Home</i></a>
                             </li>
                             <li>
@@ -26,31 +28,29 @@
                                 <div class="Nodes">
                                     <img src="images/menu_top.png" />
                                     <ul>
-                                        <li><a href="#check">检查人员</a></li>
-                                        <li><a href="#cure">养护人员</a></li>
+                                        <li><a href="login.html">退出登录</a></li>
                                     </ul>
                                     <img src="images/menu_bottom.png" />
                                 </div>
                             </li>
                             <li>
-                                <a href="taskManage.html"><em>任务管理</em></a>
+                                <a href="taskManage.html"><em>审核信息管理</em></a>
                                 <div class="Nodes">
                                     <img src="images/menu_top.png" />
                                     <ul>
-                                        <li><a href="#">检查人员</a></li>
-                                        <li><a href="#">养护人员</a></li>
+                                        <li><a href="taskRecord.html">审核记录</a></li>
                                     </ul>
                                     <img src="images/menu_bottom.png" />
                                 </div>
                             </li>
-                            <li  class="thisli">
+                            <li class="thisli">
                                 <a href="plantManage.html"><em>植物信息管理</em></a>
                             </li>
                             <li>
                                 <a href="Advertisement.html"><em>广告管理</em></a>
                             </li>
                             <li>
-                                <a href="#"><em>统计分析</em></a>
+                                <a href="chart.html"><em>统计分析</em></a>
                             </li>
                         </ul>
                         <div class="thisMenu" id="thisMenu"></div>
@@ -61,7 +61,23 @@
     <div class="all">
 
     <!-- 检查人员 -->
-    <h1 id="check">任务信息一览</h1>
+    <div class="head">
+        <h1 id="check">任务信息一览</h1>
+        <div class="search">
+            <input type="number" placeholder="按id查询">
+            <button>查询</button>
+        </div>
+        <div class="select_search">
+            <span>状态查询:</span>
+            <select>
+                <option value="-1">全部</option>
+                <option value="0">养护中</option>
+                <option value="1">良好</option>
+                <option value="2">不良</option>
+            </select>
+            <button>查询</button>
+        </div>
+    </div>
         <table cellspacing="1">
             <tr>
                 <th>编号</th>
@@ -73,34 +89,19 @@
                 <th>养护进度</th>
                 <th>时间</th>
                 <th>备注</th>
+                <th>二维码</th>
                 <th>操作</th>
             </tr>
             <tr class="addNewTask">
-                <td><input type="text" name="id" disabled value="自动生成"></td>
-                <td><input type="text" name="name"></td>
-                <td>
-                    <select name="status" value=''>
-                        <option value="2">养护中</option>
-                        <option value="1">良好</option>
-                        <option value="0">不良</option>
-                    </select></td>
-                <td><input type="text" name="expected"></td>
-                <td><input type="text" name="actual"></td>
-                <td><input type="text" name="fertilizer_num"></td>
-                <td class="radio">
-                    <select name="schedule" value=''>
-                        <option value="1">维护中</option>
-                        <option value="0">完成</option>
-                    </select>
-                </td>
-                <td><input type="text" value="2019.3.12" name = "date"></td>
-                <td><input type="text" name="remarks"></td>
-                <td>
-                    <button>新增任务</button>
-                </td>
+                
             </tr>
         </table>
-    
+        
+        <!-- 分页 -->
+        <div class="page">
+            <span class="left"></span>
+            <span class="right"></span>
+        </div>
     </div>
 
 <!--引用JQuery-->

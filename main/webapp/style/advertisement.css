@@ -87,6 +87,19 @@ body{
 	background: url('../images/btn.gif')no-repeat;
 	background-position: 0px -60px;
 }
+/* 添加新闻部分 */
+.container .addNew{
+	height: 50px;
+	width: 50px;
+	margin: 20px auto;
+	cursor: pointer;
+	border-radius: 50%;
+	background: url('../images/添加.png')no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+/* 列表部分 */
 .container .des{
     font-family: "楷体";
     font-size: 15px;
@@ -95,7 +108,9 @@ body{
     display: flex;
     justify-content: left;
     align-items: center;
-    flex-direction: column;
+	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .container .des li{
     border:solid 1px #ccc;
@@ -103,23 +118,87 @@ body{
     padding:10px;
     margin: 20px auto;
 	box-shadow: 0px 0px 7px 2px #ccc;
-	cursor: pointer;
+	/* cursor: pointer; */
+	width: 100%;
+	position: relative;
+	height: 180px;
 }
 .container .des li:hover{
-	background-color: #ccc;
+	background-color: #eee;
 }
 .container .des li h1{
-    margin: 5px;
+	margin: 5px;
+	position: absolute;
+	left: 200px;
+	top: 10px;
+	font-size: 20px!important;
 }
 .container .des li .date{
     font-size: 12px;
-    margin-bottom: 6px;
+	margin-bottom: 6px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	left: 200px;
+	top: 30px;
+	margin-left: 8px;
 }
 .container .des li img{
-    border-radius: 6px;
-    margin:0px 10px 10px 0px;
+    /* border-radius: 6px; */
+	width: 180px!important;
+	min-height: 140px;
+	left: 10px;
+	top: 10px;
+	/* border: solid 1px #ccc; */
+	float: left;
+	padding-right: 15px;
+	height: 100%;
+}
+.container .des li .text{
+	display: block;
+	margin-top: 46px;
+	margin-left: 15px;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 6;
+	-webkit-box-orient: vertical;
+	height: 120px;
+}
+.delete{
+	display: inline-block;
+	position: absolute;
+	right:10px;
+	top:10px;
+	width: 20px;
+	height: 20px;
+	background:url(../images/删除.png);
+	background-position: center center;
+	background-size: contain;
+	z-index: 99;
+	transition: all 200ms ease;
+	cursor: pointer;
+}
+.edit{
+	display: inline-block;
+	position: absolute;
+	right:40px;
+	top:10px;
+	width: 20px;
+	height: 20px;
+	background:url(../images/编辑.png);
+	background-position: center center;
+	background-size: contain;
+	z-index: 99;
+	transition: all 200ms ease;
+	cursor: pointer;
+}
+.delete:hover,.edit:hover{
+	transform: scale(1.1,1.1)
 }
 
+/* 弹窗部分 */
 .menceng{
 	width: 100vw;
 	height: 100vh;
@@ -135,8 +214,7 @@ body{
 	position: fixed;
 	left: 50%;
 	top:50%;
-	height: 400px;
-	width: 300px;
+	width: 500px;
 	border:solid 1px #ccc;
 	border-radius: 5px;
 	z-index: 999;
@@ -162,18 +240,15 @@ body{
 	align-items: center;
 	box-sizing: border-box;
 }
-.toast ul li input[type='file']{
-	width: 200px;
-}
 .toast ul li input[type='text']{
 	border:solid 1px #ccc;
 	height: 30px;
-	width: 200px;
+	width: 400px;
 }
 .toast ul li textarea{
 	resize: none;
 	height: 100px;
-	width: 200px;
+	width: 400px;
 	overflow: auto;
 }
 .toast ul .btn{
@@ -201,3 +276,4 @@ body{
 	width: 70px;
 	height: 30px;
 }
+

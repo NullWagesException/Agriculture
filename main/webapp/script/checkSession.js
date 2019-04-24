@@ -1,0 +1,10 @@
+$.ajax({
+    type:"get",
+    url:"user/checkUser",
+    success(res){
+        if(res.data=='false'||(!res.data)){
+            location.href='login.html'
+            return
+        }
+    }
+})

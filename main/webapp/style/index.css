@@ -20,3 +20,40 @@
     border-radius: 5px;
     box-shadow: 2px 1px 5px 1px #ccc;
 }  
+.toast{
+    z-index: 9999;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+    position: fixed;
+    bottom: 1rem;
+    background-color: white;
+    width: 200px;
+    border-width: 0;
+    right: 50%;
+    margin-right: -100px;
+    min-height: 20px;
+    box-shadow: 0 2px 6px 0 rgba(114, 124, 245, .5);
+    display: none;
+}
+.toast p{
+    white-space: normal;
+    font-family: "楷体";
+    font-size:14px;
+}
+/* 加载图标 */
+.load{
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    background-color: rgba(0,0,0,.2);
+    position: absolute;
+    top:0px;
+    left: 0px;
+    text-align: center;
+    line-height: 100vh;
+}
+.load img{
+    width: 100px;
+    border-radius: 50%;
+}

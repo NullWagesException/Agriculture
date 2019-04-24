@@ -1,6 +1,5 @@
     $(function (){
 
-    
     /*地图部分 */
     let map = new AMap.Map('container', {
         resizeEnable: true,
@@ -8,6 +7,7 @@
     })
 
     gdMap((res,map)=>{
+        $(".load").css("display",'none')
         map.setCenter([res.position.lng,res.position.lat])
         var marker = new AMap.Marker({
             position: map.getCenter(),
@@ -26,7 +26,61 @@
             content: "<div class='info'>我的位置", //设置文本标注内容
             direction: 'right' //设置文本标注方位
         });
-        marker.on("click",clickHandle,map)
+
+        // 设置所有植物的位置标记
+        //加载SimpleMarker
+        AMapUI.loadUI(['overlay/SimpleMarker'], function(SimpleMarker) {
+            //获取初始数据
+            $.ajax({
+                url:"curing/getAll?pageSize=9999&pageNum=1",
+                type:"get",
+                dataType:"json",
+                contentType:"application/json;charset=UTF-8",
+                success(res){
+                    $(res.data).each((index,item)=>{
+                        
+                        var iconTheme = 'default';
+
+                        //内置的样式
+                        var iconStyles = SimpleMarker.getBuiltInIconStyles(iconTheme);
+
+                        let marker =new SimpleMarker({
+                            iconTheme: iconTheme,
+                            //使用内置的iconStyle
+                            iconStyle: parseInt(item.status)==0?iconStyles[13]:(parseInt(item.status)==1?"green":"red"),
+
+                            //图标文字
+                            iconLabel: {
+                                //A,B,C.....
+                                innerHTML: item.name,
+                                style: {
+                                    color: 'white'
+                                }
+                            },
+
+                            //显示定位点
+                            // showPositionPoint:true,
+
+                            map: map,
+                            position: [parseFloat(item.longitude||(Math.random()*112).toFixed(6)),parseFloat(item.latitude||(Math.random()*27).toFixed(6))],
+
+                            //Marker的label(见https://lbs.amap.com/api/javascript-api/reference/overlay/#Marker)
+                            // label: {
+                            //     content: iconStyles[index],
+                            //     offset: new AMap.Pixel(27, 25)
+                            // }
+                        });
+
+                        //绑定事件
+                        marker.on("click",temp)
+                        //桥梁
+                        function temp(e){
+                            clickHandle(item)
+                        }
+                    })
+                }
+            })
+        });
     })
     //高德地图获取位置函数
     function gdMap(success,error){
@@ -70,28 +124,16 @@
         }
         })
 }
-
-    //处理标注点击事件
+let timeout;
+//处理标注点击事件
 function clickHandle(e){
-    // 创建纯文本标记
-//     var text = new AMap.Text({
-//        text:'纯文本标记',
-//        cursor:'pointer',
-//        style:{
-//            'padding': '.75rem 1.25rem',
-//            'margin-bottom': '1rem',
-//            'border-radius': '.25rem',
-//            'background-color': 'white',
-//            'width': '15rem',
-//            'border-width': 0,
-//            'box-shadow': '0 2px 6px 0 rgba(114, 124, 245, .5)',
-//            'text-align': 'center',
-//            'font-size': '20px',
-//            'color': 'blue'
-//        },
-//        position: [e.lnglat.lng,e.lnglat.lat]
-//    });
-//    text.setMap(map);
+    clearTimeout(timeout)
+    $(".toast").css("display","block")
+    $(".toast p").get(0).innerHTML="id:"+e.id;
+    $(".toast p").get(1).innerHTML="name:"+e.name;
+    timeout=setTimeout(function(){
+        $(".toast").css("display","none")
+    },3000)
 }
 
 })

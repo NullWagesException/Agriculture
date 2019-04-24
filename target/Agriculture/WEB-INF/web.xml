@@ -7,7 +7,7 @@
   <display-name>imageRetrieval</display-name>
 
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
+    <welcome-file>login.html</welcome-file>
   </welcome-file-list>
 
   <!-- 跨域请求 -->

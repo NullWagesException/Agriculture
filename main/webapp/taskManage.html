@@ -4,67 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <script src="script/checkSession.js"/>
     <link href="style/base.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style/plantManage.css">
-    <title>人员管理</title>
+    <title>任务审核管理</title>
 </head>
 <body>
     <!--头部菜单-->
     <div class="top">
-            <div class="w t_cen">
-                <div class="t_c_lr t_c_left"></div>
-                <div class="t_c_cen">
-                    <div class="t_c_top">
-                    </div>
-                    <div class="t_c_bottom">
-                        <ul>
-                            <li >
-                                <a href="index.html"><em>首页</em><i>Home</i></a>
-                            </li>
-                            <li>
-                                <a href="peopleManage.html"><em>人员管理</em></a>
-                                <div class="Nodes">
-                                    <img src="images/menu_top.png" />
-                                    <ul>
-                                        <li><a href="#check">检查人员</a></li>
-                                        <li><a href="#cure">养护人员</a></li>
-                                    </ul>
-                                    <img src="images/menu_bottom.png" />
-                                </div>
-                            </li>
-                            <li  class="thisli">
-                                <a href="taskManage.html"><em>任务管理</em></a>
-                                <div class="Nodes">
-                                    <img src="images/menu_top.png" />
-                                    <ul>
-                                        <li><a href="#">检查人员</a></li>
-                                        <li><a href="#">养护人员</a></li>
-                                    </ul>
-                                    <img src="images/menu_bottom.png" />
-                                </div>
-                            </li>
-                            <li>
-                                <a href="plantManage.html"><em>植物信息管理</em></a>
-                            </li>
-                            <li>
-                                <a href="Advertisement.html"><em>广告管理</em></a>
-                            </li>
-                            <li>
-                                <a href="#"><em>统计分析</em></a>
-                            </li>
-                        </ul>
-                        <div class="thisMenu" id="thisMenu"></div>
-                    </div>
+        <div class="w t_cen">
+            <div class="t_c_lr t_c_left"></div>
+            <div class="t_c_cen">
+                <div class="t_c_top">
+                </div>
+                <div class="t_c_bottom">
+                    <ul>
+                        <li>
+                            <a href="index.html"><em>首页</em><i>Home</i></a>
+                        </li>
+                        <li>
+                            <a href="peopleManage.html"><em>人员管理</em></a>
+                            <div class="Nodes">
+                                <img src="images/menu_top.png" />
+                                <ul>
+                                    <li><a href="login.html">退出登录</a></li>
+                                </ul>
+                                <img src="images/menu_bottom.png" />
+                            </div>
+                        </li>
+                        <li class="thisli">
+                            <a href="taskManage.html"><em>审核信息管理</em></a>
+                            <div class="Nodes">
+                                <img src="images/menu_top.png" />
+                                <ul>
+                                    <li><a href="taskRecord.html">审核记录</a></li>
+                                </ul>
+                                <img src="images/menu_bottom.png" />
+                            </div>
+                        </li>
+                        <li>
+                            <a href="plantManage.html"><em>植物信息管理</em></a>
+                        </li>
+                        <li>
+                            <a href="Advertisement.html"><em>广告管理</em></a>
+                        </li>
+                        <li>
+                            <a href="chart.html"><em>统计分析</em></a>
+                        </li>
+                    </ul>
+                    <div class="thisMenu" id="thisMenu"></div>
                 </div>
             </div>
         </div>
+    </div>
     <div class="all">
 
     <!-- 检查人员 -->
-    <h1 id="check">修改信息申请</h1>
+    <div class="head">
+        <h1 id="check">修改信息审核</h1>
+        <div class="search" style="right:0px">
+            <input type="number" placeholder="按id查询">
+            <button>查询</button>
+        </div>
+        <!-- <div class="select_search">
+            <span>状态查询:</span>
+            <select>
+                <option value="-1">全部</option>
+                <option value="0">养护中</option>
+                <option value="1">良好</option>
+                <option value="2">不良</option>
+            </select>
+            <button>查询</button>
+        </div> -->
+    </div>
         <table cellspacing="1">
             <tr>
                 <th>请求人员</th>
+                <th>植物id</th>
                 <th>编号</th>
                 <th>名称</th>
                 <th>生长状况</th>
@@ -77,7 +94,11 @@
                 <th>操作</th>
             </tr>
         </table>
-    
+        <!-- 分页 -->
+        <div class="page">
+            <span class="left"></span>
+            <span class="right"></span>
+        </div>
     </div>
 
 <!--引用JQuery-->

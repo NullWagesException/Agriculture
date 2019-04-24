@@ -182,6 +182,7 @@ public class CuringController extends BaseC{
     }
 
 
+
     @RequestMapping("update")
     @ResponseBody
     public Object updateArticle(Curing curing, HttpSession session,String openid){

@@ -7,19 +7,611 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bfe42c8-9828-4614-a80f-58918babaf8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/CategorizeMenu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/ShowCustomPropertiesPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/TableDrawTable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/arrow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/blocks.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/cloud.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/cloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/directory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/erp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/i1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/i2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/i3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/layout-browser-hd-bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/load.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/login_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/nav_link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/noscript.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/plugin_big.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/remember.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/shadow2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/tabicons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/tools-sprites-trans.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/unfold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/删除.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/右.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/左.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/添加.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/images/编辑.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/script/chart_js/gray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/script/chart_js/highcharts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/script/chart_js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/script/checkSession.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/script/taskRecord.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/style/chart_css/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/style/chart_css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/style/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/taskRecord.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/accordion/_content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/accordion/actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/accordion/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/accordion/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/accordion/datagrid_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/accordion/expandable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/accordion/multiple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/accordion/tools.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/calendar/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/calendar/firstday.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combo/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combobox/actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combobox/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combobox/combobox_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combobox/combobox_data2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combobox/customformat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combobox/dynamicdata.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combobox/group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combobox/multiple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combobox/navigation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combobox/remotedata.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combobox/remotejsonp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combogrid/actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combogrid/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combogrid/datagrid_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combogrid/initvalue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combogrid/multiple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combogrid/navigation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combotree/actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combotree/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combotree/initvalue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combotree/multiple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/combotree/tree_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/aligncolumns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/cellediting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/cellstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/checkbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/clientpagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/columngroup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/complextoolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/contextmenu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/custompager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/datagrid_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/datagrid_data2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/formatcolumns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/frozencolumns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/frozenrows.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/mergecells.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/multisorting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/products.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/rowborder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/rowediting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/rowstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/selection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/simpletoolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datagrid/transform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datebox/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datebox/buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datebox/dateformat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datebox/events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datebox/validate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datetimebox/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datetimebox/initvalue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/datetimebox/showseconds.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/dialog/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/dialog/complextoolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/dialog/toolbarbuttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/draggable/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/draggable/constain.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/draggable/snap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/droppable/accept.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/droppable/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/droppable/sort.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/easyloader/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/form/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/form/form_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/form/load.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/layout/_content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/layout/addremove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/layout/autoheight.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/layout/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/layout/complex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/layout/datagrid_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/layout/full.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/layout/nestedlayout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/layout/nocollapsible.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/layout/propertygrid_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/layout/tree_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/linkbutton/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/linkbutton/group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/linkbutton/iconalign.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/linkbutton/plain.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/linkbutton/toggle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/menu/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/menu/customitem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/menu/events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/menubutton/actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/menubutton/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/messager/alert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/messager/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/messager/interactive.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/messager/position.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/numberbox/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/numberbox/format.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/numberbox/range.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/numberspinner/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/numberspinner/increment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/numberspinner/range.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/pagination/attaching.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/pagination/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/pagination/custombuttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/pagination/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/pagination/links.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/pagination/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/panel/_content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/panel/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/panel/customtools.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/panel/loadcontent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/panel/nestedpanel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/panel/paneltools.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/progressbar/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/propertygrid/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/propertygrid/customcolumns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/propertygrid/groupformat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/propertygrid/propertygrid_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/resizable/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/searchbox/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/searchbox/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/slider/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/slider/formattip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/slider/rule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/slider/vertical.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/splitbutton/actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/splitbutton/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/_content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/autoheight.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/dropdown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/fixedwidth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/hover.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/images/modem.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/images/pda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/images/scanner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/images/tablet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/nestedtabs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/striptools.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/tabimage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/tabposition.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/tabstools.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tabs/tree_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/timespinner/actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/timespinner/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/timespinner/range.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tooltip/_content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tooltip/_dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tooltip/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tooltip/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tooltip/customcontent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tooltip/customstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tooltip/position.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tooltip/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tooltip/tooltipdialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/animation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/checkbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/contextmenu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/dnd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/editable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/formatting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/icons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/lazyload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/lines.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/tree_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/tree/tree_data2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/treegrid/actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/treegrid/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/treegrid/clientpagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/treegrid/contextmenu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/treegrid/editable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/treegrid/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/treegrid/reports.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/treegrid/treegrid_data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/treegrid/treegrid_data2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/treegrid/treegrid_data3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/validatebox/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/validatebox/customtooltip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/window/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/window/customtools.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/window/inlinewindow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/window/modalwindow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/demo/window/windowlayout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/download.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/easyloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/exporting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/highcharts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/jquery.easyui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/jquery.serializejson.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/licence_gpl.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/license_commercial.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-cz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-jp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-sv_SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/locale/easyui-lang-zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.combo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.combobox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.combogrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.combotree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.datagrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.datebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.datetimebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.draggable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.droppable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.linkbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.menubutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.messager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.numberbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.numberspinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.propertygrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.resizable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.searchbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.spinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.splitbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.timespinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.treegrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.validatebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/plugins/jquery.window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/easyloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.combobox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.datebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.draggable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.droppable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.linkbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.propertygrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.resizable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/src/jquery.window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/black/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/bootstrap/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/default/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/gray/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/Excel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/alert-red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/cut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/edit_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/edit_remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/filesave.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/filter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/mini_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/mini_edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/mini_refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/ok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/pencil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/redo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/reload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/sum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/icons/undo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/webapp/ui/themes/metro/window.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/java/com/zf/controller/CuringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/com/zf/controller/CuringController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/java/com/zf/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/com/zf/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/com/zf/controller/UserUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/com/zf/controller/UserUpdateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/com/zf/mapper/CuringMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/com/zf/mapper/CuringMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/com/zf/mapper/UpdateUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/com/zf/mapper/UpdateUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/com/zf/pojo/Curing.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/com/zf/pojo/Curing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/com/zf/pojo/UpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/com/zf/pojo/UpdateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/Advertisement.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/Advertisement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/chart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/peopleManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/peopleManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/plantManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/plantManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/script/advertisement.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/script/advertisement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/script/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/script/manage.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/script/manage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/script/plantManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/script/plantManage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/script/taskManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/script/taskManage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/style/advertisement.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/style/advertisement.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/style/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/style/peopleManage.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/style/peopleManage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/style/plantManage.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/style/plantManage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/webapp/taskManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/webapp/taskManage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/com/zf/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agriculture/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agriculture/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zf/controller/CuringController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/controller/CuringController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zf/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/mapper/CuringMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/mapper/CuringMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zf/pojo/Curing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zf/pojo/Curing.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,36 +642,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-999">
-              <caret line="74" column="49" lean-forward="true" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+            <state relative-caret-position="171">
+              <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="96" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/java/com/zf/pojo/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-              <folding>
-                <element signature="e#734#735#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-                <element signature="e#1417#1418#0" expanded="true" />
-                <element signature="e#1444#1445#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/CuringController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5805">
-              <caret line="231" column="11" selection-start-line="231" selection-start-column="11" selection-end-line="231" selection-end-column="11" />
+            <state relative-caret-position="521">
+              <caret line="223" column="37" lean-forward="true" selection-start-line="223" selection-start-column="37" selection-end-line="223" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -87,82 +663,71 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/ArticleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+            <state relative-caret-position="-478">
+              <caret line="68" column="32" lean-forward="true" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/java/com/zf/Filter/SimpleCORSFilter.java">
+        <entry file="file://$PROJECT_DIR$/main/webapp/chart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="162">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/java/com/zf/mapper/UpdateUserMapper.xml">
+        <entry file="file://$PROJECT_DIR$/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1674">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="271">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/UserUpdateController.java">
+        <entry file="file://$PROJECT_DIR$/main/webapp/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2700">
-              <caret line="117" column="45" selection-start-line="117" selection-start-column="45" selection-end-line="117" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="277">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/java/com/zf/mapper/CuringMapper.xml">
+        <entry file="file://$PROJECT_DIR$/main/webapp/peopleManage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="189">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/java/com/zf/pojo/Curing.java">
+        <entry file="file://$PROJECT_DIR$/main/webapp/plantManage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="42" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#788#789#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
-                <element signature="e#978#979#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1066#1067#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="189">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/java/com/zf/pojo/UpdateUser.java">
+        <entry file="file://$PROJECT_DIR$/main/webapp/taskManage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="189">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/webapp/taskRecord.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -184,7 +749,8 @@
       <find>mysql</find>
       <find>mys</find>
       <find>@Scope(&quot;prototype&quot;)</find>
-      <find>@Scope(&quot;prototype&quot;)</find>
+      <find>http://192.168.1.54:8080/agri/</find>
+      <find>test</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,24 +765,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main/java/com/zf/service/IUpdateUser.java" />
-        <option value="$PROJECT_DIR$/main/java/com/zf/mapper/FertilizerMapper.xml" />
-        <option value="$PROJECT_DIR$/main/java/com/zf/mapper/PesticidesMapper.xml" />
-        <option value="$PROJECT_DIR$/main/java/com/zf/mapper/PlantMapper.xml" />
-        <option value="$PROJECT_DIR$/main/java/com/zf/mapper/SeedlingMapper.xml" />
-        <option value="$PROJECT_DIR$/main/java/com/zf/pojo/User.java" />
-        <option value="$PROJECT_DIR$/main/java/com/zf/service/impl/SeedlingService.java" />
-        <option value="$PROJECT_DIR$/main/java/com/zf/service/impl/PesticidesService.java" />
-        <option value="$PROJECT_DIR$/main/java/com/zf/service/impl/FertilizerService.java" />
-        <option value="$PROJECT_DIR$/main/java/com/zf/service/impl/PlantService.java" />
-        <option value="$PROJECT_DIR$/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/main/java/com/zf/myutils/CreateQRCode.java" />
-        <option value="$USER_HOME$/Desktop/test/index.html" />
         <option value="$PROJECT_DIR$/main/resources/applicationContext-controller.xml" />
         <option value="$PROJECT_DIR$/target/Agriculture/index.jsp" />
         <option value="$PROJECT_DIR$/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/main/webapp/script/plantManage.js" />
         <option value="$PROJECT_DIR$/main/java/com/zf/controller/QrcodeController.java" />
         <option value="$PROJECT_DIR$/main/resources/SqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -238,7 +789,6 @@
         <option value="$PROJECT_DIR$/main/java/com/zf/service/IUserUpdateService.java" />
         <option value="$PROJECT_DIR$/main/java/com/zf/service/impl/UserUpdareService.java" />
         <option value="$PROJECT_DIR$/main/java/com/zf/mapper/UpdateUserMapper.java" />
-        <option value="$PROJECT_DIR$/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/main/java/com/zf/service/IUserService.java" />
         <option value="$PROJECT_DIR$/main/java/com/zf/service/impl/UserService.java" />
         <option value="$PROJECT_DIR$/main/java/com/zf/mapper/UserMapper.java" />
@@ -248,8 +798,24 @@
         <option value="$PROJECT_DIR$/main/java/com/zf/pojo/UpdateUser.java" />
         <option value="$PROJECT_DIR$/main/java/com/zf/controller/UserUpdateController.java" />
         <option value="$PROJECT_DIR$/main/java/com/zf/mapper/UpdateUserMapper.xml" />
+        <option value="$PROJECT_DIR$/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/main/webapp/login.html" />
+        <option value="$PROJECT_DIR$/main/webapp/script/advertisement.js" />
+        <option value="$PROJECT_DIR$/main/webapp/script/index.js" />
+        <option value="$PROJECT_DIR$/main/webapp/script/manage.js" />
+        <option value="$PROJECT_DIR$/main/webapp/script/plantManage.js" />
+        <option value="$PROJECT_DIR$/main/webapp/script/taskManage.js" />
+        <option value="$PROJECT_DIR$/main/webapp/script/taskRecord.js" />
         <option value="$PROJECT_DIR$/main/java/com/zf/controller/CuringController.java" />
         <option value="$PROJECT_DIR$/main/java/com/zf/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/main/webapp/script/checkSession.js" />
+        <option value="$PROJECT_DIR$/main/webapp/Advertisement.html" />
+        <option value="$PROJECT_DIR$/main/webapp/chart.html" />
+        <option value="$PROJECT_DIR$/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/main/webapp/peopleManage.html" />
+        <option value="$PROJECT_DIR$/main/webapp/plantManage.html" />
+        <option value="$PROJECT_DIR$/main/webapp/taskManage.html" />
+        <option value="$PROJECT_DIR$/main/webapp/taskRecord.html" />
       </list>
     </option>
   </component>
@@ -396,15 +962,6 @@
               <item name="Agriculture" type="b2602c69:ProjectViewProjectNode" />
               <item name="Agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zf" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Agriculture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Agriculture" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -412,6 +969,28 @@
               <item name="Agriculture" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="chart_js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Agriculture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Agriculture" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -423,28 +1002,28 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555941444073" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556093006361" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/ImageRetrieval" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27531284" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaWork\Agriculture\main\webapp" />
-      <recent name="D:\JavaWork\Agriculture\main\webapp\test" />
-      <recent name="D:\JavaWork\Agriculture\main\java\com\zf\mapper" />
-      <recent name="D:\JavaWork\Agriculture" />
-      <recent name="D:\javawork\Agriculture\src\main\java\com\zf\pojo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zf.mapper" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaWork\Agriculture\main\webapp\script" />
       <recent name="D:\JavaWork\Agriculture\main\webapp" />
+      <recent name="D:\JavaWork\Agriculture\main\webapp\test" />
+      <recent name="D:\JavaWork\Agriculture\main\java\com\zf\mapper" />
+      <recent name="D:\JavaWork\Agriculture" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -556,7 +1135,7 @@
       <workItem from="1555728074445" duration="245000" />
       <workItem from="1555728522892" duration="34129000" />
       <workItem from="1555899147605" duration="16510000" />
-      <workItem from="1555941637971" duration="987000" />
+      <workItem from="1555941637971" duration="6024000" />
     </task>
     <task id="LOCAL-00001" summary="去除了Lombok，兼容性更强">
       <created>1555291540321</created>
@@ -607,16 +1186,23 @@
       <option name="project" value="LOCAL" />
       <updated>1555899189742</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="对登陆逻辑进行了改正">
+      <created>1555980908817</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1555980908817</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125243000" />
+    <option name="totallyTimeSpent" value="130280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25871313" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22654155" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -627,8 +1213,8 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.43767706" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4305949" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.24787535" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33569404" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -669,176 +1255,10 @@
     <MESSAGE value="修改了之前映射文件留下的一些bug，同时为user提供了CRUD接口" />
     <MESSAGE value="修复了一系列BUG" />
     <MESSAGE value="完整版" />
-    <option name="LAST_COMMIT_MESSAGE" value="完整版" />
+    <MESSAGE value="对登陆逻辑进行了改正" />
+    <option name="LAST_COMMIT_MESSAGE" value="对登陆逻辑进行了改正" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/webapp/script/plantManage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/pojo/Seedling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/pojo/Pesticides.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/pojo/Images.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ERP/erp-parent/web/src/main/webapp/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/resources/SqlMapConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/Agriculture/WEB-INF/classes/SqlMapConfig.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/service/ICuringService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/mapper/CuringMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/QrcodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/PlantController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/PesticidesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/FertilizerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/ImagesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/pojo/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/pojo/Fertilizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/mapper/ArticleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/service/IArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/service/impl/ArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/SeedlingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/service/IUserUpdateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/java/com/zf/service/impl/UserUpdareService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -848,13 +1268,6 @@
             <element signature="e#1084#1085#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
@@ -982,44 +1395,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/CuringController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5805">
-          <caret line="231" column="11" selection-start-line="231" selection-start-column="11" selection-end-line="231" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/ArticleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/Filter/SimpleCORSFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/java/com/zf/mapper/UpdateUserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1674">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/UserUpdateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="117" column="45" selection-start-line="117" selection-start-column="45" selection-end-line="117" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1072,10 +1451,229 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/zf/Filter/SimpleCORSFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/advertisement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4725">
+          <caret line="175" column="13" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/chart_js/gray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/chart_js/highcharts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/chart_js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/Chart.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/jquery.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/jquery-1.12.4.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/manage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2477">
+          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/Other.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/plantManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11765">
+          <caret line="438" column="14" selection-start-line="438" selection-start-column="14" selection-end-line="438" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#image#0;n#td#11;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#td#11;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#td#11;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/taskManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6365">
+          <caret line="238" column="10" selection-start-line="238" selection-start-column="10" selection-end-line="238" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#td#11;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#td#11;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#td#11;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#td#11;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/taskRecord.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5616">
+          <caret line="208" column="43" selection-start-line="208" selection-start-column="43" selection-end-line="208" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/UserUpdateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="117" column="45" selection-start-line="117" selection-start-column="45" selection-end-line="117" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/script/checkSession.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/Advertisement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/peopleManage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/plantManage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/taskManage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/webapp/taskRecord.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-999">
-          <caret line="74" column="49" lean-forward="true" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+        <state relative-caret-position="171">
+          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="96" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <caret line="68" column="32" lean-forward="true" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/java/com/zf/controller/CuringController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="223" column="37" lean-forward="true" selection-start-line="223" selection-start-column="37" selection-end-line="223" selection-end-column="37" />
         </state>
       </provider>
     </entry>

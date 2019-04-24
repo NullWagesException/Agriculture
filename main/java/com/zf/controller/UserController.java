@@ -86,6 +86,17 @@ public class UserController extends BaseC{
         }
     }
 
+    @RequestMapping("checkUser")
+    @ResponseBody
+    public boolean test(HttpSession session){
+        User user = (User) session.getAttribute("qurUser");
+        if (user!=null)
+            return true;
+
+        return false;
+    }
+
+
     @RequestMapping("getAll")
     
     @ResponseBody

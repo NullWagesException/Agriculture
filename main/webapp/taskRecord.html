@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <script src="script/checkSession.js"/>
+    <link href="style/base.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style/plantManage.css">
+    <title>审核记录</title>
+</head>
+<body>
+    <div class="all" style="margin-top:50px">
+    <div class="head">
+        <h1 id="check">审核记录</h1>
+        <div class="search">
+            <input type="number" placeholder="按id查询">
+            <button>查询</button>
+        </div>
+        <div class="select_search">
+            <span>状态查询:</span>
+            <select>
+                <option value="-1">全部</option>
+                <option value="1">已通过</option>
+                <option value="2">已否决</option>
+            </select>
+            <button>查询</button>
+        </div>
+    </div>
+        <table cellspacing="1">
+            <tr>
+                <th>请求人员</th>
+                <th>植物id</th>
+                <th>编号</th>
+                <th>名称</th>
+                <th>生长状况</th>
+                <th>期望措施</th>
+                <th>实际措施</th>
+                <th>所需物品</th>
+                <th>养护进度</th>
+                <th>时间</th>
+                <th>备注</th>
+                <th>操作</th>
+            </tr>
+        </table>
+         <!-- 分页 -->
+         <div class="page">
+                <span class="left"></span>
+                <span class="right"></span>
+            </div>
+    </div>
+
+<!--引用JQuery-->
+<script type="text/javascript" src="script/jquery.js"></script>
+<script src="script/taskRecord.js"></script>
+<!--其他样式-->
+<script type="text/javascript" src="script/Other.js"></script>
+</body>
+</html>

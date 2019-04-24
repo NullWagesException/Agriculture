@@ -6,7 +6,7 @@ li{
     list-style-type: none;
 }
 .all{
-    margin: 200px auto;
+    margin: 100px auto;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 1%;
@@ -14,11 +14,68 @@ li{
     justify-content: center;
     flex-direction: column;
 }
+.all .head{
+    text-align: center;
+    position: relative;
+    margin: 0px auto;
+}
 .all h1{
     display: block;
     margin: 0px auto;
     margin-bottom: 20px;
+    text-align: center;
 }
+.all .head .search{
+    position: absolute;
+    right: 200px;
+    top: 10px;
+    height:25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.all .head .search input{
+    border: solid 1px #ccc;
+    height: 100%;
+    width: 70%;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.all .head .search button{
+    width: 22%;
+    border-radius: 3px;
+    height: 100%;
+    font-size: 5px;
+    background-color: #fff;
+    color: #543;
+    border: 1px #ccc solid;
+}
+
+.select_search{
+    width: 180px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height:25px;
+}
+.select_search select{
+    height: 25px;
+}
+.select_search button{
+    width: 22%;
+    border-radius: 3px;
+    height: 100%;
+    font-size: 5px;
+    background-color: #fff;
+    color: #543;
+    border: 1px #ccc solid;
+}
+
+/* 主体 */
 .all table{
     border: solid 1px #ccc;
     margin: 0px auto;
@@ -28,8 +85,9 @@ li{
     border: solid 1px #ccc;
     text-align: center;
     white-space: nowrap;
+    overflow: auto;
 }
-.all table td button:nth-child(1){
+.all table td button:nth-child(2){
     background-color: #f44;
     color: #fff;
     border-radius: 2px;
@@ -38,7 +96,7 @@ li{
     outline: none;
     width: 50px;
 }
-.all table td button:nth-child(2){
+.all table td button:nth-child(1){
     background-color: #07c160;
     color: #fff;
     border-radius: 2px;
@@ -49,7 +107,7 @@ li{
 }
 .all table th,td input{
     width: 100px;
-    height: 30px;
+    height: 50px;
     text-align: center;
     overflow: auto;
 }
@@ -57,6 +115,35 @@ li{
     background-color: #07c160!important;
     border: 1px solid #07c160!important;
     width: 100px!important;
+}
+
+/* 分页 */
+.page{
+    text-align: center;
+    margin: 20px auto;
+}
+.page span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+.page span:hover{
+    transform: scale(1.1,1.1)
+}
+.page .left{
+    background: url(../images/左.png)no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.page .right{
+    background: url(../images/右.png)no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 
